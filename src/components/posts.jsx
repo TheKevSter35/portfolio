@@ -1,21 +1,17 @@
-import React, {useEffect, useState} from 'react'
-import { updateItems }  from './actions/global-actions'
+import React, {useEffect, } from 'react'
+import { getItems }  from '../actions/global-actions'
 import { connect } from 'react-redux'
 
 
 const Posts = () => {
-const [updateItems] = useState(true);
-	useEffect(() => {
-	}, [])
+
     useEffect(() => {
 
     },[])
 
     return (
          <div>
-        {updateItems.map((item, index) => {
-            <p key={index}>${item.id}</p>
-            })}
+        
        </div>
     )
 }
@@ -26,7 +22,7 @@ const mapStateToProps = state => ({
 })
 
 const mapDispatchToProps = dispatch => ({
-	updateItems: value => dispatch(updateItems(value))
+	getItems: value => dispatch(getItems(value))
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(Posts)

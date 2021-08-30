@@ -1,6 +1,8 @@
-const initialState = []
+const initialState = {
+    items: []
+}
 
-export const global = (state = initialState, action) => {
+const global = (state = initialState, action) => {
     switch (action.type) {
         case 'UPDATE_ITEMS':
             return {
@@ -11,3 +13,4 @@ export const global = (state = initialState, action) => {
             return state
     }
 }
+export default global
