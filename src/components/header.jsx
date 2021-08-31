@@ -6,7 +6,7 @@ const Header = () => {
             <nav>
                 <a href="/">Portfolio</a>
                  <a href="/">About</a>
-                  <a href="/">Contact</a>
+                  <a href="/">Contact me</a>
             </nav>
         </header>
     )
