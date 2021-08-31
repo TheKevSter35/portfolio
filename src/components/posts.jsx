@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import React, {useEffect, } from 'react'
+import React, {useEffect, Fragment } from 'react'
 import { getItems }  from '../actions/global-actions'
 import { connect } from 'react-redux'
 
@@ -11,12 +11,15 @@ const Posts = ({ getItems, items }) => {
     },[])
 
     return (
-         <div>
+         <ul>
                 {items.map((item, index) => (
-                    <p key={index}> {item.id} </p>
+                  <li key={index}>
+                    <p> {item.id} </p>
+                    <p>{item.name} </p>
+                    </li> 
                 ))}
-        <h2>Posts</h2>
-       </div>
+      
+       </ul>
     )
 }
 

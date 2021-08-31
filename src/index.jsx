@@ -6,7 +6,7 @@ import Header from './components/header'
 import Home from './components/pages/home'
 import Post from './components/posts'
 import '../src/assets/styles/main.scss'
-
+require('dotenv').config()
 
 ReactDOM.render(
   <Provider store={store}>
