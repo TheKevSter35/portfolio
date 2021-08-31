@@ -1,9 +1,8 @@
 
 //thunk API CALL
-export async function getItems(dispatch) {
+export const getItems = () => async dispatch =>{
 	const payload = await fetch('https://jsonplaceholder.typicode.com/photos')
 	const response = await payload.json()
-
 	dispatch(updateItems(response))
 }
 // action

@@ -3,10 +3,8 @@ import { createStore, applyMiddleware, compose, combineReducers } from 'redux'
 
 import global from './reducer/global-reducer'
 
-
 const rootReducer = combineReducers({
     global
-    
 })
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose

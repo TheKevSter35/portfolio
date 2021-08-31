@@ -1,17 +1,21 @@
+/* eslint-disable react/prop-types */
 import React, {useEffect, } from 'react'
 import { getItems }  from '../actions/global-actions'
 import { connect } from 'react-redux'
 
 
-const Posts = () => {
+const Posts = ({ getItems, items }) => {
 
     useEffect(() => {
-
+      getItems()
     },[])
 
     return (
          <div>
-        
+                {items.map((item, index) => (
+                    <p key={index}> {item.id} </p>
+                ))}
+        <h2>Posts</h2>
        </div>
     )
 }
