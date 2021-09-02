@@ -1,6 +1,6 @@
-import React, {useEffect, Fragment} from 'react'
-import {getItems, getProject} from '../../actions/global-actions'
-import {Link} from 'react-router-dom'
+import React, {useEffect } from 'react'
+import {getItems, setProject} from '../../actions/global-actions'
+import {Link, useHistory} from 'react-router-dom'
 import {connect} from 'react-redux'
 
 const Home = ({getItems, items}) => {
@@ -8,10 +8,11 @@ const Home = ({getItems, items}) => {
     useEffect(() => {
         getItems()
     }, [])
-
+let history = useHistory()
     const handleOnClick = itemId => {
         console.log(itemId)
-        getProject(itemId)
+        setProject(itemId)
+        history.push(`portfolio/${itemId}`)
     }
     return (
         <main>
@@ -40,10 +41,12 @@ const Home = ({getItems, items}) => {
     )
 }
 
-const mapStateToProps = state => ({items: state.global.items})
+const mapStateToProps = state => ({
+    items: state.global.items
+})
 
 const mapDispatchToProps = dispatch => ({
-    getItems: value => dispatch(getItems(value))
+    getItems: value => dispatch(getItems(value)),
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(Home)
