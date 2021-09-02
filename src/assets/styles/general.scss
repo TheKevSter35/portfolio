@@ -1,35 +1,33 @@
 header {
   background-color: #000;
   width: 100%;
-      position: relative;
-    z-index: 100;
-    transition-duration: .125s;
-    will-change: top;
+  position: relative;
+  z-index: 100;
+  transition-duration: .125s;
+  will-change: top;
 
   nav {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-        padding: 50px;
-
-    .inner {
-      max-width: 1280px;
+    padding: 50px;
 
 
-      a {
-        font-size: 32px;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        font-weight: bold;
+    a {
+      font-size: 32px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      font-weight: bold;
+      color: $white;
 
-        span {
-          font-size: 16px;
-          font-weight: normal;
-          color: inherit;
-        }
+      span {
+        font-size: 16px;
+        font-weight: normal;
+        color: inherit;
       }
+
     }
   }
 }

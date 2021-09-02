@@ -1,5 +1,6 @@
 const initialState = {
-    items: []
+    items: [],
+    project: {},
 }
 
 const global = (state = initialState, action) => {
@@ -8,6 +9,11 @@ const global = (state = initialState, action) => {
             return {
                 ...state,
                 items: action.value
+            }
+            case 'UPDATE_PROJECT':
+            return {
+                ...state,
+                project: action.value
             }
         default:
             return state
