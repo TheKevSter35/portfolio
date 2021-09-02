@@ -1,6 +1,6 @@
 import React, {useEffect } from 'react'
 import {getItems, setProject} from '../../actions/global-actions'
-import {Link, useHistory} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 import {connect} from 'react-redux'
 
 const Home = ({getItems, items}) => {
@@ -8,11 +8,10 @@ const Home = ({getItems, items}) => {
     useEffect(() => {
         getItems()
     }, [])
-let history = useHistory()
-    const handleOnClick = itemId => {
-        console.log(itemId)
-        setProject(itemId)
-        history.push(`portfolio/${itemId}`)
+
+    const handleOnClick = id => {
+        console.log(id)
+        setProject(id)
     }
     return (
         <main>

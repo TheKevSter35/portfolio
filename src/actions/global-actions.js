@@ -13,8 +13,8 @@ export const updateItems = value => ({
 })
 
 
-export const setProject = (itemId) => async dispatch =>{
-	console.log(itemId)
+export const setProject = (id) => async dispatch =>{
+	const itemId = id
 	const payload = await fetch(`${process.env.REACT_APP_API_KEY}/${itemId}`)
 	const response = await payload.json()
 	dispatch(updateProject(response))
