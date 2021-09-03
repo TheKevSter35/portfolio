@@ -1,12 +1,13 @@
 import React, {useEffect} from 'react'
-import { setProject }  from '../../actions/global-actions'
+import { setProject, }  from '../../actions/global-actions'
 import { connect } from 'react-redux'
+import { useParams } from 'react-router'
 
 
 const PortfolioWork = ({ project, setProject }) => {
-
+ const param = useParams()
     useEffect(() => {
-      setProject()
+        setProject(param.id)
     },[])
 
 
@@ -32,8 +33,10 @@ const mapStateToProps = state => ({
 })
 
 const mapDispatchToProps = dispatch => ({
-	   setProject: (value, id) => dispatch(setProject(value,id))
+    setProject: id => dispatch(setProject(id))
 })
+
+
 
 
 export default connect(mapStateToProps, mapDispatchToProps)(PortfolioWork)

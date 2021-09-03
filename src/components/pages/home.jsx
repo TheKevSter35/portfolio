@@ -10,8 +10,7 @@ const Home = ({getItems, items, setProject}) => {
     }, [])
 
     const history = useHistory()
-    const handleOnClick = (id) => {
-        setProject(id)
+    const handleOnClick = (id) => { 
         setTimeout(() => {
             history.push(`/portfolio/${id}`)
         }, 300);
@@ -43,7 +42,9 @@ const Home = ({getItems, items, setProject}) => {
     )
 }
 
-const mapStateToProps = state => ({items: state.global.items})
+const mapStateToProps = state => ({
+    items: state.global.items
+})
 
 const mapDispatchToProps = dispatch => ({
     getItems: value => dispatch(getItems(value)),
