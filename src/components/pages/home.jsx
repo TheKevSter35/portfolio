@@ -1,21 +1,21 @@
-import React, {useEffect } from 'react'
+import React, {useEffect} from 'react'
 import {getItems, setProject} from '../../actions/global-actions'
 import {useHistory} from 'react-router-dom'
 import {connect} from 'react-redux'
 
 const Home = ({getItems, items, setProject}) => {
-console.log(window.location.href.substring('/') )
+
     useEffect(() => {
         getItems()
     }, [])
-    console.log(items)
- const history = useHistory()
-    const handleOnClick = (id)  => {       
+
+    const history = useHistory()
+    const handleOnClick = (id) => {
         setProject(id)
         setTimeout(() => {
             history.push(`/portfolio/${id}`)
         }, 300);
-        
+
     }
     return (
         <main>
@@ -27,7 +27,6 @@ console.log(window.location.href.substring('/') )
                                 <h2>{item.name}
                                 </h2>
                                 <button
-                                    
                                     onClick={() => {
                                     handleOnClick(item.id)
                                 }}>
@@ -44,9 +43,7 @@ console.log(window.location.href.substring('/') )
     )
 }
 
-const mapStateToProps = state => ({
-    items: state.global.items
-})
+const mapStateToProps = state => ({items: state.global.items})
 
 const mapDispatchToProps = dispatch => ({
     getItems: value => dispatch(getItems(value)),
