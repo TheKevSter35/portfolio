@@ -1,15 +1,15 @@
-import React, {useEffect, Fragment } from 'react'
+import React, {useEffect} from 'react'
 import { setProject }  from '../../actions/global-actions'
 import { connect } from 'react-redux'
 
 
-const PortfolioWork = ({ setProject, project, id }) => {
+const PortfolioWork = ({ project, setProject }) => {
 
     useEffect(() => {
       setProject()
     },[])
 
-   console.log(project)
+
     return (
         <main>
             <section className="intro">
@@ -32,7 +32,7 @@ const mapStateToProps = state => ({
 })
 
 const mapDispatchToProps = dispatch => ({
-	setProject: value => dispatch(setProject(value))
+	   setProject: (value, id) => dispatch(setProject(value,id))
 })
 
 

@@ -1,17 +1,21 @@
 import React, {useEffect } from 'react'
 import {getItems, setProject} from '../../actions/global-actions'
-import {Link} from 'react-router-dom'
+import {useHistory} from 'react-router-dom'
 import {connect} from 'react-redux'
 
-const Home = ({getItems, items}) => {
-
+const Home = ({getItems, items, setProject}) => {
+console.log(window.location.href.substring('/') )
     useEffect(() => {
         getItems()
     }, [])
-
-    const handleOnClick = id => {
-        console.log(id)
+    console.log(items)
+ const history = useHistory()
+    const handleOnClick = (id)  => {       
         setProject(id)
+        setTimeout(() => {
+            history.push(`/portfolio/${id}`)
+        }, 300);
+        
     }
     return (
         <main>
@@ -22,13 +26,13 @@ const Home = ({getItems, items}) => {
                             <li key={index}>
                                 <h2>{item.name}
                                 </h2>
-                                <Link
-                                    to={`/portfolio/${item.id}`}
+                                <button
+                                    
                                     onClick={() => {
                                     handleOnClick(item.id)
                                 }}>
                                     Link
-                                </Link>
+                                </button>
 
                             </li>
                         ))}
@@ -46,6 +50,7 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => ({
     getItems: value => dispatch(getItems(value)),
+    setProject: id => dispatch(setProject(id))
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(Home)
