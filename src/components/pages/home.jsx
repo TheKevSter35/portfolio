@@ -1,9 +1,9 @@
 import React, {useEffect} from 'react'
-import {getItems, setProject} from '../../actions/global-actions'
+import {getItems} from '../../actions/global-actions'
 import {useHistory} from 'react-router-dom'
 import {connect} from 'react-redux'
 
-const Home = ({getItems, items, setProject}) => {
+const Home = ({getItems, items}) => {
 
     useEffect(() => {
         getItems()
@@ -48,7 +48,6 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => ({
     getItems: value => dispatch(getItems(value)),
-    setProject: id => dispatch(setProject(id))
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(Home)
