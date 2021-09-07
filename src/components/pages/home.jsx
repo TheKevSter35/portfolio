@@ -22,58 +22,7 @@ const Home = ({getItems, items}) => {
                 <div className="inner">
                     <ul className="portfolio-list">
                         {items.map((item, index) => (
-                            <li
-                                key={index}
-                                style={{
-                                backgroundColor: `${item.bgcolor}`
-                            }}
-                                onClick={() => {
-                                handleOnClick(item.id)
-                            }}>
-                                <img src={item.image} alt/>
-
-                                <div className="copy">
-                                    <h2>test</h2>
-                                </div>
-
-                            </li>
-                        ))}
-                        {items.map((item, index) => (
-                            <li
-                                key={index}
-                                style={{
-                                backgroundColor: `${item.bgcolor}`
-                            }}
-                                onClick={() => {
-                                handleOnClick(item.id)
-                            }}>
-                                <img src={item.image} alt/>
-
-                                <div className="copy">
-                                    <h2>test</h2>
-                                </div>
-
-                            </li>
-                        ))}
-                        {items.map((item, index) => (
-                            <li
-                                key={index}
-                                style={{
-                                backgroundColor: `${item.bgcolor}`
-                            }}
-                                onClick={() => {
-                                handleOnClick(item.id)
-                            }}>
-                                <img src={item.image} alt/>
-
-                                <div className="copy">
-                                    <h2>test</h2>
-                                </div>
-
-                            </li>
-                        ))}
-                        {items.map((item, index) => (
-                            <li
+                            <li 
                                 key={index}
                                 style={{
                                 background: `${item.bgcolor}`
@@ -81,10 +30,10 @@ const Home = ({getItems, items}) => {
                                 onClick={() => {
                                 handleOnClick(item.id)
                             }}>
-                                <img src={item.image} alt/>
+                                <img src={item.thumbnail} alt={item.name}/>
 
                                 <div className="copy">
-                                    <h2>test</h2>
+                                    <b>{item.name}</b>
                                 </div>
 
                             </li>
