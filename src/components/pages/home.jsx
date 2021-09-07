@@ -76,7 +76,7 @@ const Home = ({getItems, items}) => {
                             <li
                                 key={index}
                                 style={{
-                                backgroundColor: `${item.bgcolor}`
+                                background: `${item.bgcolor}`
                             }}
                                 onClick={() => {
                                 handleOnClick(item.id)
