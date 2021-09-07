@@ -31,6 +31,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: $primary-font;
+  background-color: #FBFBFB;
 }
 
 
@@ -56,8 +57,17 @@ a {
   color: $black
 }
 
-.inner{    max-width: 1280px;
+.inner{    
+  max-width: 1280px;
     }
+
 button {
+}
+
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 

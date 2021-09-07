@@ -10,7 +10,7 @@ const Home = ({getItems, items}) => {
     }, [])
 
     const history = useHistory()
-    const handleOnClick = (id) => { 
+    const handleOnClick = (id) => {
         setTimeout(() => {
             history.push(`/portfolio/${id}`)
         }, 300);
@@ -19,18 +19,73 @@ const Home = ({getItems, items}) => {
     return (
         <main>
             <section className="intro">
-                <div className="intro__inner">
-                    <ul>
+                <div className="inner">
+                    <ul className="portfolio-list">
                         {items.map((item, index) => (
-                            <li key={index}>
-                                <h2>{item.name}
-                                </h2>
-                                <button
-                                    onClick={() => {
-                                    handleOnClick(item.id)
-                                }}>
-                                    Link
-                                </button>
+                            <li
+                                key={index}
+                                style={{
+                                backgroundColor: `${item.bgcolor}`
+                            }}
+                                onClick={() => {
+                                handleOnClick(item.id)
+                            }}>
+                                <img src={item.image} alt/>
+
+                                <div className="copy">
+                                    <h2>test</h2>
+                                </div>
+
+                            </li>
+                        ))}
+                        {items.map((item, index) => (
+                            <li
+                                key={index}
+                                style={{
+                                backgroundColor: `${item.bgcolor}`
+                            }}
+                                onClick={() => {
+                                handleOnClick(item.id)
+                            }}>
+                                <img src={item.image} alt/>
+
+                                <div className="copy">
+                                    <h2>test</h2>
+                                </div>
+
+                            </li>
+                        ))}
+                        {items.map((item, index) => (
+                            <li
+                                key={index}
+                                style={{
+                                backgroundColor: `${item.bgcolor}`
+                            }}
+                                onClick={() => {
+                                handleOnClick(item.id)
+                            }}>
+                                <img src={item.image} alt/>
+
+                                <div className="copy">
+                                    <h2>test</h2>
+                                </div>
+
+                            </li>
+                        ))}
+                        {items.map((item, index) => (
+                            <li
+                                key={index}
+                                style={{
+                                backgroundColor: `${item.bgcolor}`
+                            }}
+                                onClick={() => {
+                                handleOnClick(item.id)
+                            }}>
+                                <img src={item.image} alt/>
+
+                                <div className="copy">
+                                    <h2>test</h2>
+                                </div>
 
                             </li>
                         ))}
@@ -42,12 +97,10 @@ const Home = ({getItems, items}) => {
     )
 }
 
-const mapStateToProps = state => ({
-    items: state.global.items
-})
+const mapStateToProps = state => ({items: state.global.items})
 
 const mapDispatchToProps = dispatch => ({
-    getItems: value => dispatch(getItems(value)),
+    getItems: value => dispatch(getItems(value))
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(Home)

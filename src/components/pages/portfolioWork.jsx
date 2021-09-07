@@ -14,7 +14,7 @@ const PortfolioWork = ({ project, setProject }) => {
     return (
         <main>
             <section className="intro">
-                <div className="intro__inner">
+                <div className="intro__inner inner">
          <ul>
                 
                 <h2>Mijn porjec </h2>

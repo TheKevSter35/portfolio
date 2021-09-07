@@ -34,14 +34,68 @@ header {
 
 
 main {
-  section {
-    display: flex;
-    justify-content: center;
-    padding: 16px;
-  }
+  section {}
 
   .intro {
+    padding-top: 100px;
 
-    &__inner {}
+    .inner {
+      max-width: 1280px;
+      justify-content: center;
+      margin: 0 auto;
+    }
+  }
+}
+
+.portfolio-list {
+  display: flex;
+  flex-direction: row;
+  padding: .0.5em;
+  overflow: hidden;
+  flex-wrap: wrap;
+  JUSTIFY-CONTENT: center;
+
+
+  li {
+    color: #fff;
+    transition: 0.3s ease 0s;
+    box-sizing: content-box;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 400px;
+    width: calc(100% / 3);
+    cursor: pointer;
+
+    img {
+      width: 270px;
+      margin: auto;
+    }
+
+    .copy {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -200%;
+      top: 0;
+      display: flex;
+      overflow: hidden;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: 0.6s ease;
+    }
+
+
+  }
+
+  li:hover {
+    .copy {
+      opacity: 1;
+      background-color: #fff;
+      color: black;
+      bottom: 0%;
+    }
   }
 }

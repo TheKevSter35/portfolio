@@ -1,10 +1,52 @@
 @media screen and (max-width: $screen-monitor) {}
 
-@media screen and (max-width: $screen-laptop) {}
+@media screen and (max-width: $screen-laptop) {
+    .portfolio-list {
+    max-width: 990px;
+    margin: 0 auto;
+    li {
 
-@media screen and (max-width: $screen-laptop-small) {}
+    min-height: 400px;
+    width: calc(100% / 2);
+  
+}
+}
+}
 
-@media screen and (max-width: $screen-tablet) {}
+@media screen and (max-width: $screen-laptop-small) {
+    .portfolio-list {
+    min-width: 760px;
+    li {
+
+    
+  
+}
+}}
+
+@media screen and (max-width: $screen-tablet) {
+    .portfolio-list {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0.5em;
+    overflow: hidden;
+    flex-wrap: wrap;
+    JUSTIFY-CONTENT: center;
+    align-items: center;
+    min-width: 100%;
+}
+.portfolio-list li {
+    color: #fff;
+    transition: 0.3s ease 0s;
+    box-sizing: content-box;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 400px;
+    width: calc(100%);
+    cursor: pointer;
+}
+}
 
 @media screen and (max-width: $screen-mobile) {}
 
