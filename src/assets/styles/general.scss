@@ -34,11 +34,9 @@ header {
 
 
 main {
-  padding: 110px 0;
-  section {}
+  padding: 200px 0 100px;
 
-  .intro {
-    padding-top: 100px;
+  section {
 
     .inner {
       max-width: 1280px;
@@ -85,11 +83,11 @@ main {
       justify-content: center;
       align-items: center;
       opacity: 0;
-      transition: 0.6s ease; 
-      
+      transition: 0.6s ease;
+
       b {
-            font-size: 1.3em;
-            padding: 15px;
+        font-size: 1.3em;
+        padding: 15px;
       }
     }
 
@@ -104,4 +102,57 @@ main {
       bottom: 0%;
     }
   }
+}
+
+.work-list {
+  li {
+    position: relative;
+    padding-bottom: 100px;
+    transition: 0.6s ease;
+    cursor: pointer;
+
+     img{
+       box-shadow: 4px 5px 11px 0px rgba(0,0,0,0.38);
+       filter: grayscale(0.8);
+       transition: inherit;
+       height: 450px;
+       object-fit: cover;
+     }
+
+    .copy {
+      position: absolute;
+      background-color: $white;
+      left: 0;
+      bottom: 40px;
+      min-height: 310px;
+      min-width: 370px;
+      transform: translateX(20%);
+      right: 80%;
+      transition: inherit;
+      padding: 20px;
+       box-shadow: 4px 5px 11px 0px rgba(0,0,0,0.38);
+    }
+  }
+  li:hover {
+   
+    
+     img{
+       
+       filter: grayscale(0);
+     }
+
+    .copy {
+      background-color: $dark-grey;
+      color: $white;
+      bottom: 60px;
+    }
+  }
+  // li:nth-child(even) {
+    
+
+  //   .copy {
+  //     right: -80%;
+  //     transform: translateX(-80%);
+  //   }
+  // }
 }

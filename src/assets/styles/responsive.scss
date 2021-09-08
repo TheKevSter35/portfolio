@@ -48,8 +48,19 @@
 }
 }
 
-@media screen and (max-width: $screen-mobile) {}
+@media screen and (max-width: $screen-mobile) {
+    .work-list li .copy {
+    left: 0;
+    right: 0;
+    margin: 16px;
+        transform: translateX(0%);
+        max-width: 370px;
+        min-width: unset;
+}
+}
 
-@media screen and (max-width: $screen-mobile-small) {}
+@media screen and (max-width: $screen-mobile-small) {
+    
+}
 
 @media screen and (max-width: $screen-mobile-smaller) {}
