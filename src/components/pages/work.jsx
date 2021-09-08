@@ -22,12 +22,13 @@ const Work = ({getItems, items}) => {
                 <div className="inner">
                     <ul className="work-list">
                         {items.map((item, index) => (
-                            <li key={index} onClick={() => { handleOnClick(item.id) }}>
+                            <li key={index} onClick={() => { handleOnClick(item.id)}}>
                                 <img src={item.banner} alt={item.name}/>
 
                                 <div className="copy">
                                     <h2>{item.name}</h2>
                                     <p>{item.description}</p>
+                                    <a className="primary-button" href={`/portfolio/${item.id}`} onClick={() => { handleOnClick(item.id) }} >Check work</a>
                                 </div>
 
                             </li>

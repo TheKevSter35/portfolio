@@ -54,14 +54,21 @@ p {
 
 a {
   text-decoration: none;
-  color: $black
+  
 }
 
 .inner{    
   max-width: 1280px;
     }
 
-button {
+.primary-button {
+
+  position: absolute;
+    bottom: 30px;
+    padding: 20px;
+    background-color: $dark-red;
+    color: $white;
+    border-bottom: 5px solid $light-red
 }
 
 
