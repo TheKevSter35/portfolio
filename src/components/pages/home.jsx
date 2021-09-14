@@ -18,7 +18,7 @@ const Home = ({getItems, items}) => {
     }
     return (
         <main>
-            <section className="intro">
+            <section className="home">
                 <div className="inner">
                     <ul className="portfolio-list">
                         {items.map((item, index) => (
