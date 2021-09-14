@@ -190,7 +190,8 @@ main {
       min-height: 350px;
 
       img {
-        width: 250px;
+        max-height: 380px;
+        object-fit: contain;
         text-align: center;
         margin: 0 auto;
       }
@@ -222,7 +223,8 @@ main {
     h2 {
       padding-bottom: 30px;
     }
-    a{
+
+    a {
       margin: 0 15px;
     }
   }
