@@ -2,66 +2,70 @@
 
 @media screen and (max-width: $screen-laptop) {
     .portfolio-list {
-    max-width: 990px;
-    margin: 0 auto;
-    li {
+        max-width: 990px;
+        margin: 0 auto;
 
-    min-height: 400px;
-    width: calc(100% / 2);
-  
-}
-}
+        li {
+
+            min-height: 400px;
+            width: calc(100% / 2);
+
+        }
+    }
 }
 
 @media screen and (max-width: $screen-laptop-small) {
     .portfolio-list {
-    min-width: 760px;
-    li {
+        min-width: 760px;
+    }
+    .copy .copy__inner.inner {
+            display: flex;
+            flex-direction: column;
 
-    
-  
+            >div {
+                width: 100%;
+            }
+        }
 }
-}}
 
 @media screen and (max-width: $screen-tablet) {
     .portfolio-list {
-    display: flex;
-    flex-direction: column;
-    padding: 0 0.5em;
-    overflow: hidden;
-    flex-wrap: wrap;
-    JUSTIFY-CONTENT: center;
-    align-items: center;
-    min-width: 100%;
-}
-.portfolio-list li {
-    color: #fff;
-    transition: 0.3s ease 0s;
-    box-sizing: content-box;
-    position: relative;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    min-height: 400px;
-    width: calc(100%);
-    cursor: pointer;
-    max-width: 460px;
-}
+        display: flex;
+        flex-direction: column;
+        padding: 0 0.5em;
+        overflow: hidden;
+        flex-wrap: wrap;
+        JUSTIFY-CONTENT: center;
+        align-items: center;
+        min-width: 100%;
+    }
+
+    .portfolio-list li {
+        color: #fff;
+        transition: 0.3s ease 0s;
+        box-sizing: content-box;
+        position: relative;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        min-height: 400px;
+        width: calc(100%);
+        cursor: pointer;
+        max-width: 460px;
+    }
 }
 
 @media screen and (max-width: $screen-mobile) {
     .work-list li .copy {
-    left: 0;
-    right: 0;
-    margin: 16px;
+        left: 0;
+        right: 0;
+        margin: 16px;
         transform: translateX(0%);
         max-width: 370px;
         min-width: unset;
-}
+    }
 }
 
-@media screen and (max-width: $screen-mobile-small) {
-    
-}
+@media screen and (max-width: $screen-mobile-small) {}
 
 @media screen and (max-width: $screen-mobile-smaller) {}
