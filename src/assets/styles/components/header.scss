@@ -1,0 +1,33 @@
+header {
+  background-color: $bg-black;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  transition-duration: .125s;
+  will-change: top;
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 45px 20px;
+
+
+    a {
+      // font-size: 32px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      font-weight: bold;
+      color: $white;
+
+      span {
+        font-size: 16px;
+        font-weight: normal;
+        color: inherit;
+      }
+
+    }
+  }
+}

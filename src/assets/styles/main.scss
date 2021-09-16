@@ -1,7 +1,14 @@
+@import "../styles/typography.scss";
 @import "../styles/settings.scss";
 @import "../styles/general.scss";
 @import "../styles/animations.scss";
 @import "../styles/responsive.scss";
+
+
+
+// components
+@import "../styles/components/header.scss";
+@import "../styles/components/footer.scss";
 
 
 

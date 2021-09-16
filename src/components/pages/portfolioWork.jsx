@@ -1,3 +1,4 @@
+/* eslint-disable no-mixed-operators */
 import React, {Fragment, useEffect} from 'react'
 import {setProject} from '../../actions/global-actions'
 import {connect} from 'react-redux'
@@ -18,40 +19,57 @@ const PortfolioWork = ({project, setProject}) => {
                 </div>
             </section>
 
-            <section className="copy">
+            <section className="copy-section">
                 <div className="copy__inner inner">
                     <div className="copy">
                         <h1>{project.name}</h1>
                         <p>{project.description}</p>
+                        <div className="links">
+                            {project.demolink && <a
+                                className="primary-button"
+                                href={`${project.demolink}`}
+                                target="_blank"
+                                rel="noreferrer">Demo
+                            </a>
+}
+                            {project.repository && <a
+                                className="primary-button"
+                                href={`${project.repository}`}
+                                target="_blank"
+                                rel="noreferrer">Repository
+                            </a>
+}
+                        </div>
                     </div>
+
                     <div className="image">
                         <img src={project.image} alt={project.name}/>
                     </div>
                 </div>
             </section>
 
-            {project.demolink && 
-            <section className="demolink">
-                <div className="demolink__inner inner" style={{
-                                background: `${project.bgcolor}`
-                            }}>
+            {!project.demolink && !project.repository || <section className="demolink">
+                <div
+                    className="demolink__inner inner"
+                    style={{
+                    background: `${project.bgcolor}`
+                }}>
                     <h2>Links</h2>
-                    <a
+                    {project.demolink && <a
                         className="primary-button"
                         href={`${project.demolink}`}
                         target="_blank"
                         rel="noreferrer">Demo
                     </a>
-                    {project.repository && 
-                    <Fragment>
-                        <a
+}
+
+                    {project.repository && <a
                         className="primary-button"
                         href={`${project.repository}`}
                         target="_blank"
                         rel="noreferrer">Repository
                     </a>
-                    </Fragment>
-                    }
+}
 
                 </div>
             </section>
