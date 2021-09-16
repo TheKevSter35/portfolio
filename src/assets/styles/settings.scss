@@ -9,10 +9,10 @@ $screen-mobile-small: 420px;
 $screen-mobile-smaller: 350px;
 
 
-// font
-$primary-font: Helvetica;
+
 
 // colors
+$bg-black: #231F20;
 $dark-grey: #0e0e0e;
 $grey: #8D99AE;
 $light-grey: #EDF2F4;
@@ -30,32 +30,9 @@ $black: #000;
 body {
   margin: 0;
   padding: 0;
-  font-family: $primary-font;
   background-color: #FBFBFB;
 }
 
-
-h1 {
-  font-size: 30px;
-}
-
-h2 {
-  font-size: 25px;
-}
-
-h3 {
-  font-size: 20px;
-}
-
-p {
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  text-decoration: none;
-
-}
 
 .inner {
   max-width: 1280px;
@@ -78,4 +55,9 @@ ul {
 img {
   width: 100%;
   display: block;
+}
+
+svg{
+  width: 50px;
+  fill: #fff;
 }

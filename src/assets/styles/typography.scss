@@ -1,0 +1,48 @@
+// font settings
+@font-face {
+  font-display: swap;
+    font-family: 'Raleway-Regular';
+    src: url('../fonts/Raleway-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+    font-family: 'Raleway-Bold';
+    src: url('../fonts/Raleway-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+// Fonts
+$primary-font: 'Raleway-Regular', sans-serif;
+$secondary-font: 'Raleway-Bold', sans-serif;
+
+body {
+  font-family: $primary-font;
+}
+
+h1 {
+  font-size: 30px;
+  font-family: $secondary-font;
+}
+
+h2 {
+  font-size: 25px;
+  font-family: $secondary-font;
+}
+
+h3 {
+  font-size: 20px;
+  font-family: $secondary-font;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
