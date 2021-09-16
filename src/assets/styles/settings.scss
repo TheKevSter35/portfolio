@@ -8,9 +8,6 @@ $screen-mobile: 580px;
 $screen-mobile-small: 420px;
 $screen-mobile-smaller: 350px;
 
-
-
-
 // colors
 $bg-black: #231F20;
 $dark-grey: #0e0e0e;
@@ -20,44 +17,57 @@ $dark-red: #7F1028;
 $light-red: #AD646D;
 $white: #FFFFFF;
 $black: #000;
-
 *,
-*:before,
-*:after {
-  box-sizing: border-box;
+*:after,
+*:before {
+    box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  background-color: #FBFBFB;
+    margin: 0;
+    padding: 0;
+    background-color: #FBFBFB;
 }
 
-
 .inner {
-  max-width: 1280px;
+    max-width: 1280px;
 }
 
 .primary-button {
-  padding: 20px;
-  background-color: $dark-red;
-  color: $white;
-  border-bottom: 5px solid $light-red
+    margin-bottom: 20px;
+    width: 110px;
+    display: block;
+
+    svg {
+        width: 25px;
+        height: 25px;
+        top: 7px;
+        fill: #fff;
+        position: relative;
+        margin-right: 3px;
+        transition: 0.3s ease 0s;
+        left:0;
+    }
+}
+.primary-button:hover {
+
+        svg {
+            left: 8px;
+        }
 }
 
-
 ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 img {
-  width: 100%;
-  display: block;
+    width: 100%;
+    display: block;
 }
 
-svg{
-  width: 50px;
-  fill: #fff;
+svg {
+    width: 50px;
+    fill: #fff;
 }

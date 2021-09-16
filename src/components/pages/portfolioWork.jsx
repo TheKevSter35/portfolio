@@ -1,8 +1,9 @@
 /* eslint-disable no-mixed-operators */
-import React, {Fragment, useEffect} from 'react'
+import React, {useEffect} from 'react'
 import {setProject} from '../../actions/global-actions'
 import {connect} from 'react-redux'
 import {useParams} from 'react-router'
+import {ArrowRight} from '../icons'
 
 const PortfolioWork = ({project, setProject}) => {
     const param = useParams()
@@ -24,22 +25,26 @@ const PortfolioWork = ({project, setProject}) => {
                     <div className="copy">
                         <h1>{project.name}</h1>
                         <p>{project.description}</p>
+                        {!project.demolink && !project.repository || 
                         <div className="links">
+                            <h3>Links</h3>
                             {project.demolink && <a
                                 className="primary-button"
                                 href={`${project.demolink}`}
                                 target="_blank"
-                                rel="noreferrer">Demo
+                                rel="noreferrer"> <ArrowRight/> Demo
                             </a>
 }
                             {project.repository && <a
                                 className="primary-button"
                                 href={`${project.repository}`}
                                 target="_blank"
-                                rel="noreferrer">Repository
+                                rel="noreferrer"> <ArrowRight/> Repository
                             </a>
 }
                         </div>
+}
+
                     </div>
 
                     <div className="image">
@@ -47,34 +52,6 @@ const PortfolioWork = ({project, setProject}) => {
                     </div>
                 </div>
             </section>
-
-            {!project.demolink && !project.repository || <section className="demolink">
-                <div
-                    className="demolink__inner inner"
-                    style={{
-                    background: `${project.bgcolor}`
-                }}>
-                    <h2>Links</h2>
-                    {project.demolink && <a
-                        className="primary-button"
-                        href={`${project.demolink}`}
-                        target="_blank"
-                        rel="noreferrer">Demo
-                    </a>
-}
-
-                    {project.repository && <a
-                        className="primary-button"
-                        href={`${project.repository}`}
-                        target="_blank"
-                        rel="noreferrer">Repository
-                    </a>
-}
-
-                </div>
-            </section>
-}
-
         </main>
     )
 }
