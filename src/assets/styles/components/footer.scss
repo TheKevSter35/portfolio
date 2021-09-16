@@ -1,0 +1,15 @@
+footer {
+  background-color: $bg-black;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+
+  nav {
+    a {
+      margin: 10px;
+    }
+  }
+}
