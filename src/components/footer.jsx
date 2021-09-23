@@ -5,6 +5,7 @@ import {Link} from 'react-router-dom'
 const Footer = () => {
     return (
         <footer>
+            <div className="inner">
             <nav>
                 <a
                     href="https://github.com/TheKevSter35"
@@ -22,6 +23,7 @@ const Footer = () => {
                 </a>
             </nav>
              <p>© 2021 Kevin Curi</p>
+             </div>
         </footer>
     )
 }
