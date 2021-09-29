@@ -1,13 +1,15 @@
 import {React} from "react";
 import {Link} from 'react-router-dom'
+import {Logo} from './icons'
 
 const Header = () => {
     return (
         <header>
             <nav>
-                <Link to="/">Home</Link>
-                <Link to="/work">Work</Link>
-                <Link to="/about">About</Link>
+                
+                <Link to="/work"><span>Work</span></Link>
+                <Link to="/"><Logo/></Link>
+                <Link to="/about"><span>About</span></Link>
             </nav>
         </header>
     )

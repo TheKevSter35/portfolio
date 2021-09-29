@@ -11,7 +11,7 @@ $screen-mobile-smaller: 350px;
 // colors
 $bg-black: #231F20;
 $dark-grey: #0e0e0e;
-$grey: #8D99AE;
+$grey: #d1d1d1;
 $light-grey: #EDF2F4;
 $dark-red: #7F1028;
 $light-red: #AD646D;
@@ -35,7 +35,6 @@ body {
 
 .primary-button {
     margin-bottom: 20px;
-    width: 110px;
     display: block;
 
     svg {

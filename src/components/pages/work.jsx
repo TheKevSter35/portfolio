@@ -2,6 +2,7 @@ import React, {useEffect} from 'react'
 import {getItems} from '../../actions/global-actions'
 import {useHistory} from 'react-router-dom'
 import {connect} from 'react-redux'
+import {ArrowRight} from '../icons'
 
 const Work = ({getItems, items}) => {
 
@@ -28,7 +29,7 @@ const Work = ({getItems, items}) => {
                                 <div className="copy">
                                     <h2>{item.name}</h2>
                                     <p>{item.description}</p>
-                                    <a className="primary-button" href={`/portfolio/${item.id}`} onClick={() => { handleOnClick(item.id) }} >Check work</a>
+                                    <a className="primary-button" href={`/portfolio/${item.id}`} onClick={() => { handleOnClick(item.id) }} > <ArrowRight/> Check work</a>
                                 </div>
 
                             </li>

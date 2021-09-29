@@ -1,5 +1,14 @@
 import React from 'react'
 
+export const Logo = ({fill= `#fff`, stroke= `#231f20`}) => (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="25em"
+      viewBox="0 0 277 240"
+    >
+      <path data-name="Polygon 2" d="M138.5 0L277 240H0z" fill={fill} />
+    </svg>
+)
 
 export const Github = () => (
     <svg

@@ -11,7 +11,7 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    padding: 45px 20px;
+    padding: 20px;
 
 
     a {
@@ -28,6 +28,10 @@ header {
         color: inherit;
       }
 
+      svg {
+        width: 48px;
+        fill: #fff;
+      }
     }
   }
 }
