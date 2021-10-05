@@ -17,13 +17,13 @@ const About = () => {
         <main className="about">
             <section className="banner">
                 <div className="banner__inner inner">
-                    <img src="/images/about/about-background.jpg"/>
+                    <img src="/images/about/about-background.jpg" alt="about bg"/>
                 </div>
             </section>
             <section className="profile">
                 <div className="inner">
                     <div className="about">
-                        <img src="/images/about/profile.png"/>
+                        <img src="/images/about/profile.png" alt="about profile"/>
                     </div>
                     <div className="copy">
                         <p>My name is Kevin Curi. I'm a graduated CMD student with Front-end Developer
@@ -36,7 +36,7 @@ const About = () => {
             <section className="skills code">
                 <div className="inner">
                     <div className="image">
-                        <img src="/images/about/profile.png"/>
+                        <img src="/images/about/about-code.jpeg" alt="about code"/>
                     </div>
                     <div className="copy">
 
@@ -166,7 +166,7 @@ const About = () => {
             <section className="skills design">
                 <div className="inner">
                     <div className="image">
-                        <img src="/images/about/profile.png"/>
+                        <img src="/images/about/about-ux.jpg" alt="about ux"/>
                     </div>
                     <div className="copy">
 
@@ -240,16 +240,14 @@ const About = () => {
             <section className="skills educations">
                 <div className="inner">
                     <div className="image">
-                        <img src="/images/about/profile.png"/>
+                        <img src="/images/about/about-foto2.jpg" alt="about educations"/>
                     </div>
                     <div className="copy">
-
                         <ul>
                             <h2>
                                 Educations
                             </h2>
                             <li>
-
                                 <span>
                                     <b>HBO </b>
                                     | Communication and Multimedia Design (2017 - 2021)
@@ -257,7 +255,6 @@ const About = () => {
 
                             </li>
                             <li>
-
                                 <span>
                                     <b>MBO Niv4 </b>
                                     | Application Developer (2014 - 2017)
@@ -265,7 +262,6 @@ const About = () => {
 
                             </li>
                             <li >
-
                                 <span>
                                     <b>MBO Niv3 </b>
                                     | Co-Administrator IT (2012 - 2014)
@@ -280,37 +276,31 @@ const About = () => {
                             <li>
 
                                 <span>
-                                    <b>CanvasHeroes
-                                    </b>
+                                    <b>CanvasHeroes </b>
                                     | Intern Front-End Developer (Sep. 2020 – Jan. 2021)
                                 </span>
 
                             </li>
                             <li>
-
                                 <span>
                                     <b>Bikkelhart </b>
                                     | Intern Front-End Developer (Jan. 2019 – Apr. 2019
                                     </span>
-
                             </li>
                             <li >
-
                                 <span>
                                     <b>Premiums </b>
                                     | Intern Web Developer(Feb. 2016 – Jan. 2017)
                                     </span>
-
                             </li>
                         </ul>
                     </div>
-
                 </div>
             </section>
             <section className="skills jobs">
                 <div className="inner">
                     <div className="image">
-                        <img src="/images/about/profile.png"/>
+                        <img src="/images/about/about-work.jpeg" alt="about jobs" />
                     </div>
                     <div className="copy">
                         <ul>

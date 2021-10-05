@@ -90,13 +90,19 @@
 }   
 
 @media screen and (max-width: $screen-mobile-small) {
+    .progression {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    grid-gap: 20px;
+    padding: 15px 5px;
+    width: 100%;
+
      .progression__title {
      width: auto;
-     
-     span {
-    display: none;
-}
      }
+    }
 }
 
 @media screen and (max-width: $screen-mobile-smaller) {}
