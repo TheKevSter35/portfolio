@@ -18,14 +18,19 @@
     .portfolio-list {
         min-width: 760px;
     }
-    .copy-section .copy__inner.inner {
-            display: flex;
-            flex-direction: column;
 
-            >div {
-                width: 100%;
-            }
+    .copy-section .copy__inner.inner {
+        display: flex;
+        flex-direction: column;
+
+        >div {
+            width: 100%;
         }
+    }
+
+    .about .skills .inner {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media screen and (max-width: $screen-tablet) {
@@ -53,6 +58,24 @@
         cursor: pointer;
         max-width: 460px;
     }
+
+    .about {
+        .profile {
+            .inner {
+                display: flex;
+                margin: auto;
+                padding: 20px;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                >div {
+                    max-width: 100%;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: $screen-mobile) {
@@ -64,8 +87,16 @@
         max-width: 370px;
         min-width: unset;
     }
-}
+}   
 
-@media screen and (max-width: $screen-mobile-small) {}
+@media screen and (max-width: $screen-mobile-small) {
+     .progression__title {
+     width: auto;
+     
+     span {
+    display: none;
+}
+     }
+}
 
 @media screen and (max-width: $screen-mobile-smaller) {}
