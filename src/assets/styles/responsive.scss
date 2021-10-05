@@ -30,6 +30,9 @@
 
     .about .skills .inner {
         grid-template-columns: 1fr;
+        >div{
+            min-height: 500px;
+        }
     }
 }
 

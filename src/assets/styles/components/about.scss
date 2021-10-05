@@ -63,6 +63,9 @@
       }
     }
   }
+  li{
+  padding: 15px;
+}
 }
 
  .skills:nth-child(odd) {
@@ -75,9 +78,7 @@
     }
   }
 
-li{
-  padding: 15px;
-}
+
 .progression {
   display: grid;
   grid-template-columns: 1fr 8fr 1fr;
