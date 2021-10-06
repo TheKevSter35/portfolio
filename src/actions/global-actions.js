@@ -2,7 +2,7 @@
 
 //thunk API CALL
 export const getItems = () => async dispatch =>{
-	const payload = await fetch(`${process.env.REACT_APP_API_KEY}`)
+	const payload = await fetch(`https://kevincuri-api.herokuapp.com/portfolio`)
 	const response = await payload.json()
 	dispatch(updateItems(response))
 }
@@ -14,7 +14,7 @@ export const updateItems = value => ({
 
 
 export const setProject = (id) => async dispatch =>{
-	const payload = await fetch(`${process.env.REACT_APP_API_KEY}/${id}`)
+	const payload = await fetch(`https://kevincuri-api.herokuapp.com/portfolio/${id}`)
 	const response = await payload.json()
 	dispatch(updateProject(response))
 	console.log(response)
