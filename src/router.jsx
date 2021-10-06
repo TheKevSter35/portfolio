@@ -6,10 +6,13 @@ import Home from './components/pages/home'
 import Work from './components/pages/work'
 import About from './components/pages/about'
 import PortfolioWork from './components/pages/portfolioWork'
+import ScrollToTop from './components/scrolltotop'
+
 const MainRouter = () => {
 
     return (
         <Router>
+            <ScrollToTop />
             <Header/>
             <Switch>
                 <Route path="/" exact component={Home}/>
