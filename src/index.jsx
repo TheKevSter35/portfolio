@@ -5,7 +5,7 @@ import store from './store'
 import MainRouter from './router'
 
 import '../src/assets/styles/main.scss'
-require('dotenv').config()
+// require('dotenv').config()
 
 ReactDOM.render(
     <Provider store={store}>
