@@ -27,7 +27,7 @@ const About = () => {
                     </div>
                     <div className="copy">
                         <p>My name is Kevin Curi. I'm a graduated CMD student with Front-end Developer
-                            and UX Designer . Lovin’ life with Gaming, Tech, and of course designing en
+                            and UX Designer knowledge. Lovin’ life with Gaming, Tech, and of course designing en
                             building websites and webapps</p>
                     </div>
 
@@ -57,7 +57,7 @@ const About = () => {
                                     }}/>
 
                                 </div>
-                                <span>7/10</span>
+                                <span>8/10</span>
                             </li>
                             <li className="progression">
                                 <div className="progression__title">
@@ -71,7 +71,7 @@ const About = () => {
                                         width: "80%"
                                     }}/>
                                 </div>
-                                <span>7/10</span>
+                                <span>8/10</span>
                             </li>
                             <li className="progression">
                                 <div className="progression__title">
@@ -82,7 +82,7 @@ const About = () => {
                                     <div
                                         className="progression__bar__status"
                                         style={{
-                                        width: "80%"
+                                        width: "70%"
                                     }}/>
                                 </div>
                                 <span>7/10</span>
@@ -96,7 +96,7 @@ const About = () => {
                                     <div
                                         className="progression__bar__status"
                                         style={{
-                                        width: "80%"
+                                        width: "70%"
                                     }}/>
                                 </div>
                                 <span>7/10</span>
@@ -110,10 +110,10 @@ const About = () => {
                                     <div
                                         className="progression__bar__status"
                                         style={{
-                                        width: "80%"
+                                        width: "60%"
                                     }}/>
                                 </div>
-                                <span>7/10</span>
+                                <span>6/10</span>
                             </li>
                             <li className="progression">
                                 <div className="progression__title">
@@ -124,40 +124,11 @@ const About = () => {
                                     <div
                                         className="progression__bar__status"
                                         style={{
-                                        width: "80%"
+                                        width: "50%"
                                     }}/>
                                 </div>
-                                <span>7/10</span>
+                                <span>5/10</span>
                             </li>
-                            {/* <li className="progression">
-                                <div className="progression__title">
-                                    <NpmIcon/>
-                                    <span>NPM</span>
-                                </div>
-                                <div className="progression__bar">
-                                    <div
-                                        className="progression__bar__status"
-                                        style={{
-                                        width: "80%"
-                                    }}/>
-                                </div>
-                                <span>7/10</span>
-                            </li>
-                            <li className="progression">
-                                <div className="progression__title">
-                                    <GitIcon/>
-                                    <span>Git</span>
-                                </div>
-                                <div className="progression__bar">
-                                    <div
-                                        className="progression__bar__status"
-                                        style={{
-                                        width: "80%"
-                                    }}/>
-                                </div>
-                                <span>7/10</span>
-                            </li> */}
-
                         </ul>
                     </div>
 
@@ -183,10 +154,10 @@ const About = () => {
                                     <div
                                         className="progression__bar__status"
                                         style={{
-                                        width: "80%"
+                                        width: "70%"
                                     }}/>
                                 </div>
-                                <span>7/10</span>
+                                <span>8/10</span>
                             </li>
                             <li className="progression">
                                 <div className="progression__title">
@@ -197,7 +168,7 @@ const About = () => {
                                     <div
                                         className="progression__bar__status"
                                         style={{
-                                        width: "80%"
+                                        width: "70%"
                                     }}/>
                                 </div>
                                 <span>7/10</span>
@@ -215,7 +186,7 @@ const About = () => {
                                         width: "80%"
                                     }}/>
                                 </div>
-                                <span>7/10</span>
+                                <span>6/10</span>
                             </li>
                             <li className="progression">
                                 <div className="progression__title">
