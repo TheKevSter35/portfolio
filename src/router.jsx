@@ -7,6 +7,7 @@ import Work from './components/pages/work'
 import About from './components/pages/about'
 import PortfolioWork from './components/pages/portfolioWork'
 import ScrollToTop from './components/scrolltotop'
+import SmoothScroll from './components/smoothscroll'
 
 const MainRouter = () => {
 
@@ -20,7 +21,9 @@ const MainRouter = () => {
                 <Route path="/about" component={About}/>
                 <Route path="/portfolio/:id" component={PortfolioWork}/>
             </Switch>
+             
             <Footer/>
+            <SmoothScroll />
         </Router>
     )
 
