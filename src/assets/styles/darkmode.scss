@@ -1,0 +1,56 @@
+.dark{
+    background-color: $bg-black;
+    color:$white;
+    a{
+        color: $white;
+    }
+    svg{
+        fill:$white;
+        
+    }
+}
+body{
+
+}
+
+.darkmodebutton {
+    position: fixed;
+    width: 40PX;
+    height: 20px;
+    top: 28px;
+    z-index: 9999;
+    right: 30px;
+    cursor: pointer;
+    border: 2px solid $bg-black;
+    background: $white;
+    display: flex;
+    margin: 0;
+    padding: 2px;
+    
+   
+    
+
+    span {
+    width: 12px;
+    height: 12px;
+    background-color: $bg-black;
+    position: relative;
+    left:0;
+    transition: 0.3s ease-in-out 0s;
+}
+    
+
+    }
+
+
+
+.dark .darkmodebutton {
+
+    border:2px solid $white;
+    background: $bg-black;
+   
+    span {
+         background-color: $white;
+         left:19px;
+    }
+}

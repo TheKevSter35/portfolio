@@ -15,9 +15,9 @@ $green: #00d66c;
 $white: #FFFFFF;
 
 //bg colors
-$bg-black: #231F20;
+$bg-black:#0e0e0e;
+$dark-grey: #231F20;;
 $grey: #d1d1d1;
-$dark-grey: #0e0e0e;
 $light-grey: #cecece;
 
 *,
@@ -67,67 +67,4 @@ ul {
 img {
     width: 100%;
     display: block;
-}
-
-
-
-
-.dark{
-    background-color: #000;
-    color:#fff;
-    a{
-        color: #fff;
-    }
-    svg{
-        fill:#fff;
-        
-    }
-}
-body{
-    transition: 0.1s ease-in-out 0s;
-}
-
-.scrolltop {
-    position: fixed;
-    width: 60px;
-    height: 30px;
-    top: 25px;
-    z-index: 9999;
-    right: 30px;
-    cursor: pointer;
-    border: 2px solid black;
-    background: #fff;
-    border-radius: 2em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-   
-    
-
-    span {
-    width: 1.5em;
-    height: 1.5em;
-    background-color: black;
-    border-radius: 100%;
-    position: relative;
-    left:0;
-    transition: 0.10s ease-in-out 0s;
-}
-    
-
-    }
-
-
-
-.dark .scrolltop {
-
-    border:2px solid #fff;
-    background: black;
-   
-
-
-    span {
-         background-color: #fff;
-         left:25px;
-    }
 }

@@ -12,7 +12,7 @@ const DarkMode = () => {
             onClick={() => {
             handleOnClick()
         }}
-            className='scrolltop'><span></span></button>
+            className='darkmodebutton'><span></span></button>
     )
 }
 
