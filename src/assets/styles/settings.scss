@@ -9,14 +9,17 @@ $screen-mobile-small: 420px;
 $screen-mobile-smaller: 350px;
 
 // colors
-$bg-black: #231F20;
-$dark-grey: #0e0e0e;
-$grey: #d1d1d1;
-$light-grey: #cecece;
-$dark-red: #7F1028;
-$light-red: #AD646D;
-$white: #FFFFFF;
 $black: #000;
+
+$green: #00d66c;
+$white: #FFFFFF;
+
+//bg colors
+$bg-black: #231F20;
+$grey: #d1d1d1;
+$dark-grey: #0e0e0e;
+$light-grey: #cecece;
+
 *,
 *:after,
 *:before {
@@ -66,7 +69,65 @@ img {
     display: block;
 }
 
-svg {
-    width: 50px;
-    fill: #fff;
+
+
+
+.dark{
+    background-color: #000;
+    color:#fff;
+    a{
+        color: #fff;
+    }
+    svg{
+        fill:#fff;
+        
+    }
+}
+body{
+    transition: 0.1s ease-in-out 0s;
+}
+
+.scrolltop {
+    position: fixed;
+    width: 60px;
+    height: 30px;
+    top: 25px;
+    z-index: 9999;
+    right: 30px;
+    cursor: pointer;
+    border: 2px solid black;
+    background: #fff;
+    border-radius: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+    
+
+    span {
+    width: 1.5em;
+    height: 1.5em;
+    background-color: black;
+    border-radius: 100%;
+    position: relative;
+    left:0;
+    transition: 0.10s ease-in-out 0s;
+}
+    
+
+    }
+
+
+
+.dark .scrolltop {
+
+    border:2px solid #fff;
+    background: black;
+   
+
+
+    span {
+         background-color: #fff;
+         left:25px;
+    }
 }

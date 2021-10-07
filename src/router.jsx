@@ -6,8 +6,8 @@ import Home from './components/pages/home'
 import Work from './components/pages/work'
 import About from './components/pages/about'
 import PortfolioWork from './components/pages/portfolioWork'
-import ScrollToTop from './components/scrolltotop'
-import SmoothScroll from './components/smoothscroll'
+import ScrollToTop from './components/functions/scrolltotop'
+import DarkMode from './components/functions/darkmodebutton'
 
 const MainRouter = () => {
 
@@ -23,7 +23,7 @@ const MainRouter = () => {
             </Switch>
              
             <Footer/>
-            <SmoothScroll />
+            <DarkMode />
         </Router>
     )
 
