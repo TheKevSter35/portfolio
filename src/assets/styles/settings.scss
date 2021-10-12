@@ -17,8 +17,9 @@ $white: #FFFFFF;
 //bg colors
 $bg-black:#0e0e0e;
 $dark-grey: #231F20;;
+$bg-white: #FBFBFB;
 $grey: #d1d1d1;
-$light-grey: #cecece;
+$light-grey: #eeeeee;
 
 *,
 *:after,
@@ -29,7 +30,7 @@ $light-grey: #cecece;
 body {
     margin: 0;
     padding: 0;
-    background-color: #FBFBFB;
+    background-color: $bg-white;
 }
 
 .inner {
