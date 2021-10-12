@@ -14,7 +14,7 @@ export const updateItems = value => ({
 
 
 export const setProject = (id) => async dispatch =>{
-	const payload = await fetch(`https://kevincuri-api.herokuapp.com/portfolio/${id}`)
+	const payload = await fetch(`https://my-json-server.typicode.com/TheKevSter35/portfolio-db/portfolio/${id}`)
 	const response = await payload.json()
 	dispatch(updateProject(response))
 	console.log(response)
