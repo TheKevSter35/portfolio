@@ -1,6 +1,7 @@
 footer {
-    background-color: $bg-black;
+    background-color: $bg-white;
     width: 100%;
+      transition: background-color 0.3s ease-in-out 0s;
 
     .inner {
         max-width: 1280px;
@@ -22,7 +23,6 @@ footer {
         }
         p {
             margin: 10px 0;
-            color: $white;
         }
     }
 }
