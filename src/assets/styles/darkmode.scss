@@ -1,18 +1,3 @@
-.dark{
-    background-color: $bg-black;
-    color:$white;
-    a{
-        color: $white;
-    }
-    svg{
-        fill:$white;
-        
-    }
-}
-body{
-
-}
-
 .darkmodebutton {
     position: fixed;
     width: 40PX;
@@ -26,31 +11,77 @@ body{
     display: flex;
     margin: 0;
     padding: 2px;
-    
-   
-    
 
     span {
-    width: 12px;
-    height: 12px;
-    background-color: $bg-black;
-    position: relative;
-    left:0;
-    transition: 0.3s ease-in-out 0s;
+        width: 12px;
+        height: 12px;
+        background-color: $bg-black;
+        position: relative;
+        left: 0;
+        transition: 0.3s ease-in-out 0s;
+    }
 }
-    
+
+.dark {
+    background-color: $bg-black;
+    color: $white;
+
+    a {
+        color: $white;
+    }
+
+    svg {
+        fill: $white;
 
     }
 
+    .darkmodebutton {
 
+        border: 2px solid $white;
+        background: $bg-black;
 
-.dark .darkmodebutton {
-
-    border:2px solid $white;
-    background: $bg-black;
-   
-    span {
-         background-color: $white;
-         left:19px;
+        span {
+            background-color: $white;
+            left: 19px;
+        }
     }
+
+    .skills:nth-child(odd) {
+        .inner {
+            .copy {
+                background-color: $bg-black;
+                color: $white;
+            }
+        }
+    }
+
+    .skills:nth-child(even) {
+        .inner {
+            .copy {
+                background-color: $dark-grey;
+                color: $white;
+            }
+        }
+    }
+
+    .work-list li .copy {
+        background-color: $dark-grey;
+        color: $white;
+
+    }
+
+    .work-list li:hover .copy {
+        background-color: $black;
+    }
+
+    .primary-button {
+        svg {
+            fill: none;
+            stroke: $white;
+        }
+    }
+
+    .copy-section .copy__inner .image {
+    background-color: $dark-grey;
+}
 }
