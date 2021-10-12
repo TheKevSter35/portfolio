@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Logo = ({fill= `#231f20`}) => (
+export const Logo = ({fill= `#000`}) => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="25em"
@@ -11,7 +11,7 @@ export const Logo = ({fill= `#231f20`}) => (
     </svg>
 )
 
-export const Github =  ({fill= `#231f20`}) => (
+export const Github =  ({fill= `#000`}) => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 291.3 291.3"
@@ -24,7 +24,7 @@ export const Github =  ({fill= `#231f20`}) => (
     </svg>
 )
 
-export const LinkedIn = ({fill= `#fff`, fill2= `#231f20`}) => (
+export const LinkedIn = ({fill= `#fff`, fill2= `#000`}) => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 291.319 291.319"
@@ -41,7 +41,7 @@ export const LinkedIn = ({fill= `#fff`, fill2= `#231f20`}) => (
     </svg>
 )
 
-export const ArrowRight = ({fill= `none`, stroke= `#231f20`}) => (
+export const ArrowRight = ({fill= `none`, stroke= `#000`}) => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       fill={fill}
