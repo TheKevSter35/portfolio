@@ -38,7 +38,7 @@ export const LinkedIn = ({fill= `#fff`, fill2= `#231f20`}) => (
     </svg>
 )
 
-export const ArrowRight = ({fill= `#fff`, stroke= `#231f20`}) => (
+export const ArrowRight = ({fill= `none`, stroke= `#231f20`}) => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       fill={fill}
