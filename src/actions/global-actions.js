@@ -2,7 +2,7 @@
 
 //thunk API CALL
 export const getItems = () => async dispatch =>{
-	const payload = await fetch(`https://kevincuri-api.herokuapp.com/portfolio`)
+	const payload = await fetch(`https://my-json-server.typicode.com/TheKevSter35/portfolio-db/portfolio`)
 	const response = await payload.json()
 	dispatch(updateItems(response))
 }
