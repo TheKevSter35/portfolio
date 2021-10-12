@@ -82,6 +82,9 @@
 }
 
 @media screen and (max-width: $screen-mobile) {
+    header {
+    padding-top: 45px;
+    }
     .work-list li .copy {
         left: 0;
         right: 0;
