@@ -44,6 +44,7 @@
         flex-direction: column;
         position: relative;
             min-height: 640px;
+            transition: background-color 0.3s ease-in-out 0s;
 
         img {
           object-fit: cover;
