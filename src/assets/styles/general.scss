@@ -65,10 +65,8 @@ main {
             color: $black;
 
             b {
-
                 top: 0%;
             }
-
         }
     }
 }
@@ -83,7 +81,7 @@ main {
 
         img {
             box-shadow: 4px 5px 11px 0 rgba(0, 0, 0, 0.38);
-            filter: grayscale(0.8);
+            filter: grayscale(0.9);
             transition: inherit;
             height: 450px;
             object-fit: cover;

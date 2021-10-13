@@ -58,7 +58,7 @@ body {
     .skills:nth-child(odd) {
         .inner {
             .copy {
-                background-color: $bg-black;
+                background-color: $black;
                 color: $white;
             }
         }
@@ -67,7 +67,7 @@ body {
     .skills:nth-child(even) {
         .inner {
             .copy {
-                background-color: $dark-grey;
+                background-color: $bg-black;
                 color: $white;
             }
         }
@@ -112,16 +112,18 @@ body {
             }
         }
     }
-
-    footer {
-        background-color: $bg-black;
-    }
-
     header {
         background-color: $bg-black;
 
         a {
             color: $white;
         }
+
+        a:not(.logo):after {
+            background-color: $white;
+        }
+    }
+    footer {
+        background-color: $bg-black;
     }
 }

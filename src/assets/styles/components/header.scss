@@ -23,17 +23,39 @@ header {
       text-align: center;
       font-weight: bold;
       color: $black;
+      position: relative;
+
 
       span {
         font-size: 16px;
-        font-weight: normal;
+        font-weight: bold;
         color: inherit;
+        text-transform: uppercase;
       }
 
       svg {
         width: 48px;
-        fill: #fff;
+        fill: $white;
       }
+    }
+
+    a:not(.logo):after {
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      display: inline-block;
+      z-index: 1;
+      width: 0;
+      height: 3px;
+      transition-duration: .125s;
+      background-color: $black;
+      content: "";
+      width: 0;
+      right: 0;
+    }
+
+    a:not(.logo):hover:after {
+      width: 100%;
     }
   }
 }
