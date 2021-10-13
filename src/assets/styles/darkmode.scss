@@ -4,7 +4,7 @@
     height: 20px;
     top: 28px;
     z-index: 9999;
-    right: 30px;
+    right: 15px;
     cursor: pointer;
     border: 2px solid $bg-black;
     background: $bg-black;
@@ -22,7 +22,7 @@
     }
 }
 
-body{
+body {
     transition: background-color 0.3s ease-in-out 0s;
 }
 
@@ -48,6 +48,11 @@ body{
             background-color: $bg-black;
             left: 19px;
         }
+    }
+
+    .portfolio-list li:hover .copy {
+        background-color: $dark-grey;
+        color: $white;
     }
 
     .skills:nth-child(odd) {
