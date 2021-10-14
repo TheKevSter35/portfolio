@@ -19,35 +19,50 @@ const Work = ({getItems, items}) => {
 
     }
     return (
-       
-               <main>
+
+        <main>
             <section className="work">
                 <div className="inner">
                     <ul className="work-list">
                         {items.map((item, index) => (
-                             <motion.div 
-        initial={{opacity: 0}} 
-        animate={{opacity: 1}}
-        exit={{opacity: 0}}
-        
-        >
-                            <li key={index} onClick={() => { handleOnClick(item.id)}}>
-                                <img src={item.banner} alt={item.name}/>
+                            <motion.div
+                                initial={{
+                                opacity: 0
+                            }}
+                                animate={{
+                                opacity: 1
+                            }}
+                                exit={{
+                                opacity: 0
+                            }}>
+                                <li
+                                    key={index}
+                                    onClick={() => {
+                                    handleOnClick(item.id)
+                                }}>
+                                    <img src={item.banner} alt={item.name}/>
 
-                                <div className="copy">
-                                    <h2>{item.name}</h2>
-                                    <p>{item.description}</p>
-                                    <a className="primary-button" href={`/portfolio/${item.id}`} onClick={() => { handleOnClick(item.id) }} > <ArrowRight/> Check work</a>
-                                </div>
+                                    <div className="copy">
+                                        <h2>{item.name}</h2>
+                                        <p>{item.description}</p>
+                                        <a
+                                            className="primary-button"
+                                            href={`/portfolio/${item.id}`}
+                                            onClick={() => {
+                                            handleOnClick(item.id)
+                                        }}>
+                                            <ArrowRight/>
+                                            Check work</a>
+                                    </div>
 
-                            </li>
-                                </motion.div>    
+                                </li>
+                            </motion.div>
                         ))}
-                  </ul>
+                    </ul>
                 </div>
             </section>
         </main>
-  
+
     )
 }
 
