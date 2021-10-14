@@ -4,6 +4,7 @@ import {setProject} from '../../actions/global-actions'
 import {connect} from 'react-redux'
 import {useParams} from 'react-router'
 import {ArrowRight} from '../icons'
+import {AnimatePresence, motion} from 'framer-motion'
 
 const PortfolioWork = ({project, setProject}) => {
     const param = useParams()
@@ -11,48 +12,82 @@ const PortfolioWork = ({project, setProject}) => {
         setProject(param.id)
     }, [])
 
+    const blackBox = {
+        initial: {
+            height: "100vh",
+            bottom: 0
+        },
+        animate: {
+            height: 0
+        }
+    };
     return (
+
         <main>
-            <section className="banner">
-                <div className="banner__inner inner">
-                    <img src={project.banner} alt={project.name}/>
+            <motion.div
+                initial={{
+                paddingTop: 1500,
+                opacity: 0
+            }}
+                animate={{
+                paddingTop: 0,
+                opacity: 1
+            }}
+                exit={{
+                paddingTop: 500,
+                opacity: 0
+            }}
+                transition={{
+                duration: 1.5
+            }}
+                className="test">
 
-                </div>
-            </section>
+                <section className="banner">
+                    <div className="banner__inner inner">
+                        <img src={project.banner} alt={project.name}/>
 
-            <section className="copy-section">
-                <div className="copy__inner inner">
-                    <div className="copy">
-                        <h1>{project.name}</h1>
-                        <p>{project.description}</p>
-                        {!project.demolink && !project.repository || 
-                        <div className="links">
-                            <h3>Links</h3>
-                            {project.demolink && <a
-                                className="primary-button"
-                                href={`${project.demolink}`}
-                                target="_blank"
-                                rel="noreferrer"> <ArrowRight/> Demo
-                            </a>
+                    </div>
+
+                </section>
+
+                <section className="copy-section">
+                    <div className="copy__inner inner">
+                        <div className="copy">
+                            <h1>{project.name}</h1>
+                            <p>{project.description}</p>
+                            {!project.demolink && !project.repository || <div className="links">
+                                <h3>Links</h3>
+                                {project.demolink && <a
+                                    className="primary-button"
+                                    href={`${project.demolink}`}
+                                    target="_blank"
+                                    rel="noreferrer">
+                                    <ArrowRight/>
+                                    Demo
+                                </a>
 }
-                            {project.repository && <a
-                                className="primary-button"
-                                href={`${project.repository}`}
-                                target="_blank"
-                                rel="noreferrer"> <ArrowRight/> Repository
-                            </a>
+                                {project.repository && <a
+                                    className="primary-button"
+                                    href={`${project.repository}`}
+                                    target="_blank"
+                                    rel="noreferrer">
+                                    <ArrowRight/>
+                                    Repository
+                                </a>
 }
+                            </div>
+}
+
                         </div>
-}
 
+                        <div className="image">
+                            <img src={project.image} alt={project.name}/>
+                        </div>
                     </div>
-
-                    <div className="image">
-                        <img src={project.image} alt={project.name}/>
-                    </div>
-                </div>
-            </section>
+                </section>
+            </motion.div>
         </main>
+
     )
 }
 

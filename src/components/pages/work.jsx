@@ -3,6 +3,7 @@ import {getItems} from '../../actions/global-actions'
 import {useHistory} from 'react-router-dom'
 import {connect} from 'react-redux'
 import {ArrowRight} from '../icons'
+import {AnimatePresence, motion} from 'framer-motion'
 
 const Work = ({getItems, items}) => {
 
@@ -18,11 +19,18 @@ const Work = ({getItems, items}) => {
 
     }
     return (
+       
                <main>
             <section className="work">
                 <div className="inner">
                     <ul className="work-list">
                         {items.map((item, index) => (
+                             <motion.div 
+        initial={{opacity: 0}} 
+        animate={{opacity: 1}}
+        exit={{opacity: 0}}
+        
+        >
                             <li key={index} onClick={() => { handleOnClick(item.id)}}>
                                 <img src={item.banner} alt={item.name}/>
 
@@ -33,12 +41,13 @@ const Work = ({getItems, items}) => {
                                 </div>
 
                             </li>
+                                </motion.div>    
                         ))}
-
-                    </ul>
+                  </ul>
                 </div>
             </section>
         </main>
+  
     )
 }
 
