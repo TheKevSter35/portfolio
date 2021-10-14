@@ -224,16 +224,3 @@ main {
     }
 }
 
-.banner {
-    &__inner {
-max-height: 410px;
-min-height: 410px;
-        img {
-            max-height: inherit;
-            object-fit: cover;
-            border: none;
-        }
-    }
-}
-
-
