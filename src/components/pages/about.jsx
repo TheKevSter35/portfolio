@@ -261,7 +261,7 @@ const About = () => {
                             <li >
                                 <span>
                                     <b>Premiums </b>
-                                    | Intern Web Developer(Feb. 2016 – Jan. 2017)
+                                    | Intern Web Developer (Feb. 2016 – Jan. 2017)
                                     </span>
                             </li>
                         </ul>
