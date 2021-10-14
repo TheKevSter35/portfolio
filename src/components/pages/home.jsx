@@ -2,6 +2,7 @@ import React, {useEffect} from 'react'
 import {getItems} from '../../actions/global-actions'
 import {useHistory} from 'react-router-dom'
 import {connect} from 'react-redux'
+import {AnimatePresence, motion} from 'framer-motion'
 
 const Home = ({getItems, items}) => {
 
@@ -17,32 +18,38 @@ const Home = ({getItems, items}) => {
 
     }
     return (
-        <main>
-            <section className="home">
-                <div className="inner">
-                    <ul className="portfolio-list">
-                        {items.map((item, index) => (
-                            <li 
-                                key={index}
-                                style={{
-                                background: `${item.bgcolor}`
-                            }}
-                                onClick={() => {
-                                handleOnClick(item.id)
-                            }}>
-                                <img src={item.thumbnail} alt={item.name}/>
+        <motion.div 
+        initial={{opacity: 0}} 
+        animate={{opacity: 1}}
+        exit={{opacity: 0}}
+        >
+            <main>
+                <section className="home">
+                    <div className="inner">
+                        <ul className="portfolio-list">
+                            {items.map((item, index) => (
+                                <li
+                                    key={index}
+                                    style={{
+                                    background: `${item.bgcolor}`
+                                }}
+                                    onClick={() => {
+                                    handleOnClick(item.id)
+                                }}>
+                                    <img src={item.thumbnail} alt={item.name}/>
 
-                                <div className="copy">
-                                    <b>{item.name}</b>
-                                </div>
+                                    <div className="copy">
+                                        <b>{item.name}</b>
+                                    </div>
 
-                            </li>
-                        ))}
+                                </li>
+                            ))}
 
-                    </ul>
-                </div>
-            </section>
-        </main>
+                        </ul>
+                    </div>
+                </section>
+            </main>
+        </motion.div>
     )
 }
 

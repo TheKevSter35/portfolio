@@ -58,14 +58,13 @@ main {
         }
 
     }
-
     li:hover {
         .copy {
             background-color: $white;
             color: $black;
 
             b {
-                top: 0%;
+                top: 0;
             }
         }
     }
@@ -121,7 +120,6 @@ main {
             }
         }
     }
-
     li:hover {
 
         img {
@@ -132,7 +130,6 @@ main {
             background-color: $dark-grey;
             color: $white;
             bottom: 60px;
-
 
             a {
                 color: inherit;
@@ -160,7 +157,7 @@ main {
         display: flex;
         flex-direction: row;
 
-        >div {
+        > div {
             padding: 20px;
             width: 50%;
             margin: 0 auto;
@@ -227,7 +224,16 @@ main {
     }
 }
 
-.banner img {
-    max-height: 410px;
-    object-fit: cover;
+.banner {
+    &__inner {
+max-height: 410px;
+min-height: 410px;
+        img {
+            max-height: inherit;
+            object-fit: cover;
+            border: none;
+        }
+    }
 }
+
+
