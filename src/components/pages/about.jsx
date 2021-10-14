@@ -15,12 +15,12 @@ import {AnimatePresence, motion} from 'framer-motion'
 const About = () => {
 
     return (
-        <motion.div 
+        <motion.main 
+        className="about"
         initial={{opacity: 0}} 
         animate={{opacity: 1}}
         exit={{opacity: 0}}
         >
-        <main className="about">
             <section className="banner">
                 <div className="banner__inner inner">
                     <img src="/images/about/about-background.jpg" alt="about bg"/>
@@ -308,8 +308,7 @@ const About = () => {
 
                 </div>
             </section>
-        </main>
-        </motion.div>
+        </motion.main>
     )
 }
 

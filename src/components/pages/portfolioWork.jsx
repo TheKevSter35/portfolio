@@ -22,23 +22,22 @@ const PortfolioWork = ({project, setProject}) => {
         }
     };
     return (
-
-        <main>
-            <motion.div
+<main className="portfoliowork">
+        <motion.div
                 initial={{
-                paddingTop: 1500,
+                top: 1200,
                 opacity: 0
             }}
                 animate={{
-                paddingTop: 0,
+                top: 0,
                 opacity: 1
             }}
                 exit={{
-                paddingTop: 500,
+                top: 1200,
                 opacity: 0
             }}
                 transition={{
-                duration: 1.5
+                duration: 1
             }}
                 className="test">
 
@@ -85,7 +84,7 @@ const PortfolioWork = ({project, setProject}) => {
                         </div>
                     </div>
                 </section>
-            </motion.div>
+        </motion.div>
         </main>
 
     )

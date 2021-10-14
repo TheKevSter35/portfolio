@@ -1,6 +1,6 @@
 main {
     padding: 200px 0 100px;
-    min-height: 91.2vh;
+    min-height: 91.1vh;
 
     section {
 
@@ -230,4 +230,11 @@ main {
 .banner img {
     max-height: 410px;
     object-fit: cover;
+}
+
+.test{
+    position: relative;
+}
+.portfoliowork{
+    overflow: hidden;
 }
