@@ -163,7 +163,7 @@ const About = () => {
                                         width: "70%"
                                     }}/>
                                 </div>
-                                <span>8/10</span>
+                                <span>7/10</span>
                             </li>
                             <li className="progression">
                                 <div className="progression__title">
@@ -189,7 +189,7 @@ const About = () => {
                                     <div
                                         className="progression__bar__status"
                                         style={{
-                                        width: "80%"
+                                        width: "60%"
                                     }}/>
                                 </div>
                                 <span>6/10</span>
@@ -203,7 +203,7 @@ const About = () => {
                                     <div
                                         className="progression__bar__status"
                                         style={{
-                                        width: "80%"
+                                        width: "70%"
                                     }}/>
                                 </div>
                                 <span>7/10</span>
