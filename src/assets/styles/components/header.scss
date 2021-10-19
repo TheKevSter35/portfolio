@@ -50,12 +50,11 @@ header {
       transition-duration: .125s;
       background-color: $black;
       content: "";
-      width: 0;
       right: 0;
     }
 
-    a:not(.logo):hover:after {
+    a:not(.logo):hover:after, a.active:after {
       width: 100%;
     }
-  }
+  } 
 }
