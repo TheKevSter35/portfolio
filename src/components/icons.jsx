@@ -1,17 +1,30 @@
 import React from 'react'
 
-export const Logo = ({fill= `#000`}) => (
+export const Logo = ({fill= `#0e0e0e`, stroke= `#0e0e0e`, stroke2= `#fff`,}) => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="25em"
-      viewBox="0 0 277 240"
-      className="icon__logo"
+      viewBox="0 0 65.06 65.5"
+      className="logo"
     >
-      <path data-name="Polygon 2" d="M138.5 0L277 240H0z" fill={fill} />
+      <path
+        d="M9.86 4.33l5.18 3.1 4.59-2.28c6.55-3.2 19.25-3.2 25.8 0l4.59 2.28 5.18-3.1c8.31-4.77 8.79-4.14 6.16 6.72-1.47 5.7-1.37 6.42.58 12.63 3.71 11.59 1.08 21-8.21 30.12a50.41 50.41 0 01-9.67 7.14c-10.45 5.79-22.08 3.31-32.73-7.14-9.28-9.07-11.92-18.53-8.2-30.07 2-6.26 2-7 .58-12.68C1.07.19 1.56-.44 9.86 4.33z"
+        fill={fill}
+        stroke={stroke}
+        strokeMiterlimit={10}
+        strokeWidth={3}
+      />
+      <path
+        fill="none"
+        stroke={stroke2}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={3}
+        d="M20.25 40.31l-6.95-6.95 6.95-6.96M45.5 26.4l6.96 6.96-6.96 6.95M27.15 42.57l12.79-18.22"
+      />
     </svg>
 )
 
-export const Github =  ({fill= `#000`}) => (
+export const Github =  ({fill= `#0e0e0e`}) => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 291.3 291.3"
@@ -24,7 +37,7 @@ export const Github =  ({fill= `#000`}) => (
     </svg>
 )
 
-export const LinkedIn = ({fill= `#fff`, fill2= `#000`}) => (
+export const LinkedIn = ({fill= `#fff`, fill2= `#0e0e0e`}) => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 291.319 291.319"
@@ -41,7 +54,7 @@ export const LinkedIn = ({fill= `#fff`, fill2= `#000`}) => (
     </svg>
 )
 
-export const ArrowRight = ({fill= `none`, stroke= `#000`}) => (
+export const ArrowRight = ({fill= `none`, stroke= `#0e0e0e`}) => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       fill={fill}
@@ -187,7 +200,7 @@ export const GitIcon = () => (
       viewBox="0 0 67 66"
       fill="#fff"
       fillRule="evenodd"
-      stroke="#000"
+      stroke="#0e0e0e"
       strokeLinecap="round"
       strokeLinejoin="round"
       width="1em"
@@ -211,7 +224,7 @@ export const NpmIcon = () => (
       viewBox="0 0 513 514"
       fill="#fff"
       fillRule="evenodd"
-      stroke="#000"
+      stroke="#0e0e0e"
       strokeLinecap="round"
       strokeLinejoin="round"
       width="1em"
@@ -306,16 +319,16 @@ export const StudentCap = () => (
     >
       <path
         d="M395.904 475.016l-236.203-72.7v121.42c0 56.133 105.787 101.644 236.274 101.644 130.48 0 236.285-45.511 236.285-101.644 0-.442-.145-.886-.154-1.318V402.316l-236.202 72.7z"
-        data-original="#000000"
+        data-original="#0e0e0e000"
         className="prefix__active-path"
-        data-old_color="#000000"
+        data-old_color="#0e0e0e000"
         fill="#fff"
       />
       <path
         d="M0 318.734l84.383 30.185 7.191-15.401 31-2.635 4.42 4.599-26.601 6.308-3.877 11.475c-.007 0-60.087 125.604-51.263 187.05 0 0 37.502 22.37 74.988 0l9.962-168v-13.984l55.8-12.588-3.941 9.705-41.604 13.529 19.242 6.874 236.203 72.7 236.201-72.7 159.699-57.116-395.9-152.313L0 318.734z"
-        data-original="#000000"
+        data-original="#0e0e0e000"
         className="prefix__active-path"
-        data-old_color="#000000"
+        data-old_color="#0e0e0e000"
         fill="#fff"
       />
     </svg>
@@ -329,24 +342,24 @@ export const WorkIcon = () => (
     >
       <path
         d="M211 240h90v30h-90zm0 0"
-        data-original="#000000"
+        data-original="#0e0e0e000"
         className="prefix__active-path"
-        data-old_color="#000000"
-        fill="#000"
+        data-old_color="#0e0e0e000"
+        fill="#0e0e0e"
       />
       <path
         d="M415.379 270H331v15c0 8.29-6.71 15-15 15H196c-8.29 0-15-6.71-15-15v-15H96.621a44.95 44.95 0 01-42.687-30.762L0 77.41V405c0 24.813 20.188 45 45 45h422c24.813 0 45-20.188 45-45V77.422l-53.938 161.816A44.94 44.94 0 01415.38 270zm0 0"
-        data-original="#000000"
+        data-original="#0e0e0e000"
         className="prefix__active-path"
-        data-old_color="#000000"
-        fill="#000"
+        data-old_color="#0e0e0e000"
+        fill="#0e0e0e"
       />
       <path
         d="M316 0H196c-24.813 0-45 20.188-45 45v15H25.809l56.574 169.746A14.997 14.997 0 0096.62 240H181v-15c0-8.29 6.71-15 15-15h120c8.29 0 15 6.71 15 15v15h84.379c6.46 0 12.187-4.117 14.238-10.254L486.195 60H361V45c0-24.813-20.187-45-45-45zM181 60V45c0-8.277 6.723-15 15-15h120c8.277 0 15 6.723 15 15v15zm0 0"
-        data-original="#000000"
+        data-original="#0e0e0e000"
         className="prefix__active-path"
-        data-old_color="#000000"
-        fill="#000"
+        data-old_color="#0e0e0e000"
+        fill="#0e0e0e"
       />
     </svg>
 )

@@ -112,6 +112,7 @@ body {
             }
         }
     }
+
     header {
         background-color: $bg-black;
 
@@ -123,13 +124,23 @@ body {
             background-color: $white;
         }
     }
+
     footer {
         background-color: $bg-black;
     }
+
     .splashscreen {
-     background: $bg-black;
-     color: $white;
-}
-}
+        background: $bg-black;
+        color: $white;
+    }
 
-
+    .logo {
+        path:first-child {
+            fill: $white;
+            stroke: $white;
+        }
+        path:last-child {
+            stroke: $bg-black;
+        }
+    }
+}

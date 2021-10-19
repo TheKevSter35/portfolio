@@ -4,7 +4,7 @@ import {setProject} from '../../actions/global-actions'
 import {connect} from 'react-redux'
 import {useParams} from 'react-router'
 import {ArrowRight} from '../icons'
-import Splashscreen from '../functions/splashscreen'
+import Splashscreen from '../functions/splashscreenPortfoliowork'
 
 const PortfolioWork = ({project, setProject}) => {
 
@@ -13,7 +13,7 @@ const PortfolioWork = ({project, setProject}) => {
         setProject(param.id)
     }, [])
     return (
-        
+
 <main className="portfoliowork">
                <Splashscreen/>
 
