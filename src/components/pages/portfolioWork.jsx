@@ -4,42 +4,18 @@ import {setProject} from '../../actions/global-actions'
 import {connect} from 'react-redux'
 import {useParams} from 'react-router'
 import {ArrowRight} from '../icons'
-import {AnimatePresence, motion} from 'framer-motion'
+import Splashscreen from '../functions/splashscreen'
 
 const PortfolioWork = ({project, setProject}) => {
+
     const param = useParams()
     useEffect(() => {
         setProject(param.id)
     }, [])
-
-    const blackBox = {
-        initial: {
-            height: "100vh",
-            bottom: 0
-        },
-        animate: {
-            height: 0
-        }
-    };
     return (
+        
 <main className="portfoliowork">
-        <motion.div
-                initial={{
-                top: 1200,
-                opacity: 0
-            }}
-                animate={{
-                top: 0,
-                opacity: 1
-            }}
-                exit={{
-                top: 1200,
-                opacity: 0
-            }}
-                transition={{
-                duration: 1
-            }}
-                className="test">
+               <Splashscreen/>
 
                 <section className="banner">
                     <div className="banner__inner inner">
@@ -84,7 +60,6 @@ const PortfolioWork = ({project, setProject}) => {
                         </div>
                     </div>
                 </section>
-        </motion.div>
         </main>
 
     )

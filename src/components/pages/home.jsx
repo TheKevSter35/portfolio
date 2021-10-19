@@ -18,12 +18,11 @@ const Home = ({getItems, items}) => {
 
     }
     return (
-        <motion.div 
+        <motion.main 
         initial={{opacity: 0}} 
         animate={{opacity: 1}}
         exit={{opacity: 0}}
         >
-            <main>
                 <section className="home">
                     <div className="inner">
                         <ul className="portfolio-list">
@@ -48,8 +47,7 @@ const Home = ({getItems, items}) => {
                         </ul>
                     </div>
                 </section>
-            </main>
-        </motion.div>
+        </motion.main>
     )
 }
 
