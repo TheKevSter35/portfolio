@@ -17,36 +17,43 @@ const Home = ({getItems, items}) => {
         }, 300);
 
     }
+
     return (
-        <motion.main 
-        initial={{opacity: 0}} 
-        animate={{opacity: 1}}
-        exit={{opacity: 0}}
-        >
-                <section className="home">
-                    <div className="inner">
-                        <ul className="portfolio-list">
-                            {items.map((item, index) => (
-                                <li
-                                    key={index}
-                                    style={{
-                                    background: `${item.bgcolor}`
-                                }}
-                                    onClick={() => {
-                                    handleOnClick(item.id)
-                                }}>
-                                    <img src={item.thumbnail} alt={item.name}/>
+        <motion.main
+            initial={{
+            opacity: 0
+        }}
+            animate={{
+            opacity: 1
+        }}
+            exit={{
+            opacity: 0
+        }}>
+            <section className="home">
+                <div className="inner">
+                    <ul className="portfolio-list">
+                        {items.map((item, index) => (
+                            <li
+                                key={index}
+                                style={{
+                                background: `${item.bgcolor}`,
+                                animationDelay: `.${item.id}s`
+                            }}
+                                onClick={() => {
+                                handleOnClick(item.id)
+                            }}>
+                                <img src={item.thumbnail} alt={item.name}/>
 
-                                    <div className="copy">
-                                        <b>{item.name}</b>
-                                    </div>
+                                <div className="copy">
+                                    <b>{item.name}</b>
+                                </div>
 
-                                </li>
-                            ))}
+                            </li>
+                        ))}
 
-                        </ul>
-                    </div>
-                </section>
+                    </ul>
+                </div>
+            </section>
         </motion.main>
     )
 }
