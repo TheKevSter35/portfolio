@@ -62,6 +62,7 @@ export const ArrowRight = ({fill= `none`, stroke= `#0e0e0e`}) => (
       strokeWidth={2}
       strokeLinecap="round"
       strokeLinejoin="round"
+      className="arrowright"
     >
       <path d="M5 12h14M12 5l7 7-7 7" />
     </svg>
