@@ -1,5 +1,5 @@
 import React from 'react'
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import {BrowserRouter as Router, Switch, Route, useLocation, Redirect} from 'react-router-dom'
 import Header from './components/header'
 import Footer from './components/footer'
 import Home from './components/pages/home'
@@ -12,6 +12,18 @@ import {AnimatePresence} from 'framer-motion'
 
 const MainRouter = () => {
 
+    function NoMatch() {
+        let location = useLocation();
+
+        return (<Redirect
+            to={{
+            pathname: "/",
+            state: {
+                from: location
+            }
+        }}/>);
+    }
+
     return (
         <Router>
             <ScrollToTop/>
@@ -21,7 +33,8 @@ const MainRouter = () => {
                     <Route path="/" exact component={Home}/>
                     <Route path="/work" component={Work}/>
                     <Route path="/about" component={About}/>
-                    <Route path="/project/:id" component={PortfolioWork}/>
+                    <Route  path="/project/:id" exact component={PortfolioWork}/>
+                    <Route path="*"><NoMatch/></Route>
                 </Switch>
             </AnimatePresence>
             <Footer/>
