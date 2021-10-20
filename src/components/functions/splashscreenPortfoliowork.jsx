@@ -27,7 +27,7 @@ const Splashscreen = ({project, setProject}) => {
                 appear={true}
                 classNames="fade-out-splashscreen"
                 unmountOnExit
-                timeout={1000}>
+                timeout={1250}>
                 <section className="splashscreen">
                    <img src={project.thumbnail} alt={project.name}/>
                    <h1>{project.name}</h1>
