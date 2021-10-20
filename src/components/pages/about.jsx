@@ -15,12 +15,17 @@ import {AnimatePresence, motion} from 'framer-motion'
 const About = () => {
 
     return (
-        <motion.main 
-        className="about"
-        initial={{opacity: 0}} 
-        animate={{opacity: 1}}
-        exit={{opacity: 0}}
-        >
+        <motion.main
+            className="about"
+            initial={{
+            opacity: 0
+        }}
+            animate={{
+            opacity: 1
+        }}
+            exit={{
+            opacity: 0
+        }}>
             <section className="banner">
                 <div className="banner__inner inner">
                     <img src="/images/about/about-background.jpg" alt="about bg"/>
@@ -33,8 +38,8 @@ const About = () => {
                     </div>
                     <div className="copy">
                         <p>My name is Kevin Curi. I'm a graduated CMD student with Front-end Developer
-                            and UX Designer knowledge. Lovin’ life with Gaming, Tech, and of course designing en
-                            building websites and webapps</p>
+                            and UX Designer knowledge. Loving life with Gaming, Tech, and of course
+                            designing en building websites and web-apps.</p>
                     </div>
 
                 </div>
@@ -226,21 +231,24 @@ const About = () => {
                             </h2>
                             <li>
                                 <span>
-                                    <b>HBO </b>
+                                    <b>HBO
+                                    </b>
                                     | Communication and Multimedia Design (2017 - 2021)
                                 </span>
 
                             </li>
                             <li>
                                 <span>
-                                    <b>MBO Niv4 </b>
+                                    <b>MBO Niv4
+                                    </b>
                                     | Application Developer (2014 - 2017)
                                 </span>
 
                             </li>
                             <li >
                                 <span>
-                                    <b>MBO Niv3 </b>
+                                    <b>MBO Niv3
+                                    </b>
                                     | Co-Administrator IT (2012 - 2014)
                                 </span>
 
@@ -253,22 +261,25 @@ const About = () => {
                             <li>
 
                                 <span>
-                                    <b>CanvasHeroes </b>
+                                    <b>CanvasHeroes
+                                    </b>
                                     | Intern Front-End Developer (Sep. 2020 – Jan. 2021)
                                 </span>
 
                             </li>
                             <li>
                                 <span>
-                                    <b>Bikkelhart </b>
+                                    <b>Bikkelhart
+                                    </b>
                                     | Intern Front-End Developer (Jan. 2019 – Apr. 2019
-                                    </span>
+                                </span>
                             </li>
                             <li >
                                 <span>
-                                    <b>Premiums </b>
+                                    <b>Premiums
+                                    </b>
                                     | Intern Web Developer (Feb. 2016 – Jan. 2017)
-                                    </span>
+                                </span>
                             </li>
                         </ul>
                     </div>
@@ -277,7 +288,7 @@ const About = () => {
             <section className="skills jobs">
                 <div className="inner">
                     <div className="image">
-                        <img src="/images/about/about-work.jpeg" alt="about jobs" />
+                        <img src="/images/about/about-work.jpeg" alt="about jobs"/>
                     </div>
                     <div className="copy">
                         <ul>
@@ -288,7 +299,8 @@ const About = () => {
                                 <div>
 
                                     <span>
-                                        <b>Bikkelhart </b>
+                                        <b>Bikkelhart
+                                        </b>
                                         | Front-End Developer (Mei. 2019 – Aug. 2019)
                                     </span>
                                 </div>
@@ -297,8 +309,9 @@ const About = () => {
                                 <div>
 
                                     <span>
-                                        <b>Premiums </b>
-                                         | Web Developer (Nov. 2016 – Apr. 2017)
+                                        <b>Premiums
+                                        </b>
+                                        | Web Developer (Nov. 2016 – Apr. 2017)
                                     </span>
                                 </div>
                             </li>
