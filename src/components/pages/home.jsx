@@ -13,7 +13,7 @@ const Home = ({getItems, items}) => {
     const history = useHistory()
     const handleOnClick = (id) => {
         setTimeout(() => {
-            history.push(`/portfolio/${id}`)
+            history.push(`/project/${id}`)
         }, 300);
 
     }

@@ -21,7 +21,7 @@ const MainRouter = () => {
                     <Route path="/" exact component={Home}/>
                     <Route path="/work" component={Work}/>
                     <Route path="/about" component={About}/>
-                    <Route path="/portfolio/:id" component={PortfolioWork}/>
+                    <Route path="/project/:id" component={PortfolioWork}/>
                 </Switch>
             </AnimatePresence>
             <Footer/>
