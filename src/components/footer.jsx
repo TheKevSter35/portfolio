@@ -1,6 +1,5 @@
 import {React} from "react";
 import {Github, LinkedIn} from '../../src/components/icons'
-import {Link} from 'react-router-dom'
 
 const Footer = () => {
     return (

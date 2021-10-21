@@ -2,7 +2,7 @@ import React, {useEffect} from 'react'
 import {getItems} from '../../actions/global-actions'
 import {useHistory} from 'react-router-dom'
 import {connect} from 'react-redux'
-import {AnimatePresence, motion} from 'framer-motion'
+import {motion} from 'framer-motion'
 
 const Home = ({getItems, items}) => {
 
