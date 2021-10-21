@@ -37,7 +37,7 @@ const Home = ({getItems, items}) => {
                                 key={index}
                                 style={{
                                 background: `${item.bgcolor}`,
-                                animationDelay: `.${item.id}s`
+                                animationDelay: ` ${ 0.1 * item.id}s`
                             }}
                                 onClick={() => {
                                 handleOnClick(item.id)
