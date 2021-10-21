@@ -1,6 +1,7 @@
 const initialState = {
     items: [],
     project: {},
+    errorStatus: ''
 }
 
 const global = (state = initialState, action) => {
@@ -14,6 +15,11 @@ const global = (state = initialState, action) => {
             return {
                 ...state,
                 project: action.value
+            }
+            case 'ERROR_PROJECT':
+            return {
+                ...state,
+                errorStatus: action.value
             }
         default:
             return state

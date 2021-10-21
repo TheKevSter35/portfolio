@@ -1,5 +1,3 @@
-
-
 //thunk API CALL
 export const getItems = () => async dispatch =>{
 	const payload = await fetch(`https://my-json-server.typicode.com/TheKevSter35/portfolio-db/portfolio`)
@@ -16,11 +14,21 @@ export const updateItems = value => ({
 export const setProject = (id) => async dispatch =>{
 	const payload = await fetch(`https://my-json-server.typicode.com/TheKevSter35/portfolio-db/portfolio/${id}`)
 	const response = await payload.json()
-	dispatch(updateProject(response))
-	console.log(response)
+	if(payload.status === 404){
+		dispatch(errorProject(true))
+	} else{
+	dispatch(errorProject(false))
+	dispatch(updateProject(response))	
+	}
 }
 // action
 export const updateProject = value => ({
 	type: 'UPDATE_PROJECT',
 	value
 })
+
+export const errorProject = value => ({
+	type: 'ERROR_PROJECT',
+	value
+})
+
