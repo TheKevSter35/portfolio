@@ -7,6 +7,7 @@
         "about": "about"
     },
     "about": {
+        "about_me":"My name is Kevin Curi. I'm a graduated CMD student with Front-end Developer and UX Designer knowledge. Loving life with Gaming, Tech, and of course designing en building websites and web-apps.",
         "code_knowledge": "Code Knowledge",
         "adobe_knowledge": "Adobe Knowledge",
         "educations": "Educations",
@@ -15,7 +16,10 @@
         "educations_3": "MBO Niv3 | Co-Administrator IT (2012 - 2014)",
         "internship": "Internship",
         "internship_1": "CanvasHeroes | Intern Front-End Developer (Sep. 2020 – Jan. 2021)",
-        "internship_2": "MBO Niv4 | Application Developer (2014 - 2017)",
-        "internship_3": "MBO Niv3 | Co-Administrator IT (2012 - 2014)"
+        "internship_2": "Bikkelhart | Intern Front-End Developer (Jan. 2019 – Apr. 2019",
+        "internship_3": "Premiums | Intern Web Developer (Feb. 2016 – Jan. 2017)",
+        "work": "Work",
+        "work_1": "Bikkelhart | Front-End Developer (Mei. 2019 – Aug. 2019)",
+        "work_2": "Premiums | Web Developer (Nov. 2016 – Apr. 2017)"
     }
 }
