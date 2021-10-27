@@ -1,0 +1,21 @@
+{
+    "welcome": {
+        "title": "Welcome to {{framework}}"
+    },
+    "nav": {
+        "work": "work",
+        "about": "about"
+    },
+    "about": {
+        "code_knowledge": "Code Knowledge",
+        "adobe_knowledge": "Adobe Knowledge",
+        "educations": "Educations",
+        "educations_1": "HBO | Communication and Multimedia Design (2017 - 2021)",
+        "educations_2": "MBO Niv4 | Application Developer (2014 - 2017)",
+        "educations_3": "MBO Niv3 | Co-Administrator IT (2012 - 2014)",
+        "internship": "Internship",
+        "internship_1": "CanvasHeroes | Intern Front-End Developer (Sep. 2020 – Jan. 2021)",
+        "internship_2": "MBO Niv4 | Application Developer (2014 - 2017)",
+        "internship_3": "MBO Niv3 | Co-Administrator IT (2012 - 2014)"
+    }
+}

@@ -11,8 +11,10 @@ import {
     AdobeIndesign
 } from '../icons'
 import {motion} from 'framer-motion'
-
+import {useTranslation} from "react-i18next";
 const About = () => {
+
+const [t, i18n] = useTranslation('common');
 
     return (
         <motion.main
@@ -53,6 +55,7 @@ const About = () => {
 
                         <ul>
                             <h2>
+                                {t('welcome.title')}
                                 Code Knowledge
                             </h2>
                             <li className="progression">

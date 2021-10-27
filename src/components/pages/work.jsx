@@ -4,10 +4,14 @@ import {useHistory} from 'react-router-dom'
 import {connect} from 'react-redux'
 import {ArrowRight} from '../icons'
 import {AnimatePresence, motion} from 'framer-motion'
+import {useTranslation} from "react-i18next";
 
 const Work = ({getItems, items}) => {
+    const [t,
+        i18n] = useTranslation('common');
 
     useEffect(() => {
+
         getItems()
     }, [])
 
@@ -21,7 +25,7 @@ const Work = ({getItems, items}) => {
     return (
         <main>
             <motion.section
-            className="work test"
+                className="work test"
                 initial={{
                 opacity: 0
             }}
@@ -43,10 +47,11 @@ const Work = ({getItems, items}) => {
                                 handleOnClick(item.id)
                             }}>
                                 <img src={item.banner} alt={item.name}/>
-
                                 <div className="copy">
                                     <h2>{item.name}</h2>
-                                    <p>{item.description}</p>
+                                    {i18n.language == 'en' && <p>{item.description_en}</p>}
+                                    {i18n.language == 'nl' && <p>{item.description_nl}</p>}
+                                    {item.description &&  <p>{item.description}</p>}
                                     <a
                                         className="primary-button"
                                         href={`/portfolio/${item.id}`}

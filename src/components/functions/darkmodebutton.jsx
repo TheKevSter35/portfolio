@@ -4,13 +4,13 @@ const DarkMode = () => {
         const element = document.querySelector('body');
         element
             .classList
-            .toggle("dark");
+            .add("dark")
     }
     const handleOnClick = () => {
         const element = document.querySelector('body');
         element
             .classList
-            .toggle("dark");
+            .toggle("dark")
     }
 
     return (

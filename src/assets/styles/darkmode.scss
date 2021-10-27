@@ -143,4 +143,11 @@ body {
             stroke: $bg-black;
         }
     }
+    .translatebuttons {
+    button:after {
+      background-color: $white;
+    }
 }
+
+}
+

@@ -5,9 +5,11 @@ import {connect} from 'react-redux'
 import {useParams, useHistory} from 'react-router'
 import {ArrowRight} from '../icons'
 import Splashscreen from '../functions/splashscreenPortfoliowork'
+import {useTranslation} from "react-i18next";
 
 const PortfolioWork = ({project, setProject, errorStatus}) => {
-
+    const [t, i18n] = useTranslation('common');
+    console.log(i18n.language)
     const history = useHistory()
 
     const param = useParams()
@@ -39,7 +41,8 @@ const PortfolioWork = ({project, setProject, errorStatus}) => {
                 <div className="copy__inner inner">
                     <div className="copy">
                         <h1>{project.name}</h1>
-                        <p>{project.description}</p>
+                        {i18n.language === 'en' && <p>{project.description_en}</p>}
+                        {i18n.language === 'nl' && <p>{project.description_nl}</p>}
                         {!project.demolink && !project.repository || <div className="links">
                             <h3>Links</h3>
                             {project.demolink && <a

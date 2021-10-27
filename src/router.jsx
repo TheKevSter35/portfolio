@@ -6,8 +6,8 @@ import Home from './components/pages/home'
 import Work from './components/pages/work'
 import About from './components/pages/about'
 import PortfolioWork from './components/pages/portfolioWork'
-import ScrollToTop from './components/functions/scrolltotop'
-import DarkMode from './components/functions/darkmodebutton'
+
+
 import {AnimatePresence} from 'framer-motion'
 
 const MainRouter = () => {
@@ -26,11 +26,12 @@ const MainRouter = () => {
 
     return (
         <Router>
-            <ScrollToTop/>
             <Header/>
             <AnimatePresence exitBeforeEnter>
                 <Switch>
                     <Route path="/" exact component={Home}/>
+                     <Route path="/nl" exact component={Home}/>
+                      <Route path="/en" exact component={Home}/>
                     <Route path="/work" component={Work}/>
                     <Route path="/about" component={About}/>
                     <Route  path="/project/:id" exact component={PortfolioWork}/>
@@ -38,7 +39,6 @@ const MainRouter = () => {
                 </Switch>
             </AnimatePresence>
             <Footer/>
-            <DarkMode/>
         </Router>
     )
 

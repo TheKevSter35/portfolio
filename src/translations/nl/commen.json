@@ -1,0 +1,12 @@
+{
+    "welcome": {
+        "title": "Welkom bij {{framework}}"
+    },
+    "nav": {
+        "work": "Werk",
+        "about": "Over Mij"
+    },
+    "about": {
+        "code_knowledge": "Code kennis"
+    }
+}
