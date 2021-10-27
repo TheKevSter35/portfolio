@@ -9,7 +9,6 @@ import {useTranslation} from "react-i18next";
 
 const PortfolioWork = ({project, setProject, errorStatus}) => {
     const [t, i18n] = useTranslation('common');
-    console.log(i18n.language)
     const history = useHistory()
 
     const param = useParams()
