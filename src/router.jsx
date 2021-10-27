@@ -6,11 +6,13 @@ import Home from './components/pages/home'
 import Work from './components/pages/work'
 import About from './components/pages/about'
 import PortfolioWork from './components/pages/portfolioWork'
-
+import {useTranslation} from "react-i18next";
 
 import {AnimatePresence} from 'framer-motion'
 
 const MainRouter = () => {
+    const [t,
+        i18n] = useTranslation('common');
 
     function NoMatch() {
         let location = useLocation();
@@ -23,6 +25,12 @@ const MainRouter = () => {
             }
         }}/>);
     }
+
+    // if(window.location.pathname === '/nl'){
+    //     i18n.changeLanguage('nl')
+    // }else{
+    //     i18n.changeLanguage('en')
+    // }
 
     return (
         <Router>
