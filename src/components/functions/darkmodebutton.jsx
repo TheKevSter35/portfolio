@@ -1,11 +1,16 @@
+import {React, useEffect} from 'react'
+
 const DarkMode = () => {
 
-    if (window.matchMedia('(prefers-color-scheme: dark)')) {
-        const element = document.querySelector('body');
-        element
-            .classList
-            .add("dark")
-    }
+    useEffect(() => {
+        if (window.matchMedia('(prefers-color-scheme: dark)')) {
+            const element = document.querySelector('body');
+            element
+                .classList
+                .add("dark")
+        }
+    }, [])
+
     const handleOnClick = () => {
         const element = document.querySelector('body');
         element
@@ -14,7 +19,6 @@ const DarkMode = () => {
     }
 
     return (
-
         <button
             onClick={() => {
             handleOnClick()
