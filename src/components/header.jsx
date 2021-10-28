@@ -6,7 +6,7 @@ import Darkmode from '../components/functions/darkmodebutton'
 import {useTranslation} from "react-i18next";
 
 const Header = () => {
-    const [t, i18n] = useTranslation('common');
+    const [t] = useTranslation('common');
 
     return (
         <header>

@@ -59,7 +59,7 @@ const Work = ({getItems, items}) => {
                                         handleOnClick(item.id)
                                     }}>
                                         <ArrowRight/>
-                                        Check work</a>
+                                        {t('work.check_work')}</a>
                                 </div>
 
                             </li>

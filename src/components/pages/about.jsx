@@ -39,9 +39,7 @@ const [t, i18n] = useTranslation('common');
                         <img src="/images/about/profile.png" alt="about profile"/>
                     </div>
                     <div className="copy">
-                        <p>My name is Kevin Curi. I'm a graduated CMD student with Front-end Developer
-                            and UX Designer knowledge. Loving life with Gaming, Tech, and of course
-                            designing en building websites and web-apps.</p>
+                        <p> {t('about.about_me')}</p>
                     </div>
 
                 </div>
@@ -55,8 +53,7 @@ const [t, i18n] = useTranslation('common');
 
                         <ul>
                             <h2>
-                                {t('welcome.title')}
-                                Code Knowledge
+                                {t('about.code_knowledge')}
                             </h2>
                             <li className="progression">
                                 <div className="progression__title">
@@ -157,7 +154,7 @@ const [t, i18n] = useTranslation('common');
 
                         <ul>
                             <h2>
-                                Adobe Knowledge
+                                {t('about.adobe_knowledge')}
                             </h2>
                             <li className="progression">
                                 <div className="progression__title">
@@ -230,59 +227,30 @@ const [t, i18n] = useTranslation('common');
                     <div className="copy">
                         <ul>
                             <h2>
-                                Educations
+                                {t('about.educations')}
                             </h2>
                             <li>
-                                <span>
-                                    <b>HBO
-                                    </b>
-                                    | Communication and Multimedia Design (2017 - 2021)
-                                </span>
-
+                                <span> {t('about.educations_1')}</span>
                             </li>
-                            <li>
-                                <span>
-                                    <b>MBO Niv4
-                                    </b>
-                                    | Application Developer (2014 - 2017)
-                                </span>
-
+                           <li>
+                                <span> {t('about.educations_2')}</span>
                             </li>
-                            <li >
-                                <span>
-                                    <b>MBO Niv3
-                                    </b>
-                                    | Co-Administrator IT (2012 - 2014)
-                                </span>
-
+                           <li>
+                                <span> {t('about.educations_3')}</span>
                             </li>
                         </ul>
                         <ul>
                             <h2>
-                                Internship
+                                {t('about.internship')}
                             </h2>
                             <li>
-
-                                <span>
-                                    <b>CanvasHeroes
-                                    </b>
-                                    | Intern Front-End Developer (Sep. 2020 – Jan. 2021)
-                                </span>
-
+                                <span> {t('about.internship_1')}</span>
                             </li>
-                            <li>
-                                <span>
-                                    <b>Bikkelhart
-                                    </b>
-                                    | Intern Front-End Developer (Jan. 2019 – Apr. 2019
-                                </span>
+                           <li>
+                                <span> {t('about.internship_2')}</span>
                             </li>
-                            <li >
-                                <span>
-                                    <b>Premiums
-                                    </b>
-                                    | Intern Web Developer (Feb. 2016 – Jan. 2017)
-                                </span>
+                           <li>
+                                <span> {t('about.internship_3')}</span>
                             </li>
                         </ul>
                     </div>
@@ -296,27 +264,13 @@ const [t, i18n] = useTranslation('common');
                     <div className="copy">
                         <ul>
                             <h2>
-                                Work
+                                {t('about.work')}
                             </h2>
                             <li>
-                                <div>
-
-                                    <span>
-                                        <b>Bikkelhart
-                                        </b>
-                                        | Front-End Developer (Mei. 2019 – Aug. 2019)
-                                    </span>
-                                </div>
+                                <span> {t('about.work_1')}</span>
                             </li>
-                            <li>
-                                <div>
-
-                                    <span>
-                                        <b>Premiums
-                                        </b>
-                                        | Web Developer (Nov. 2016 – Apr. 2017)
-                                    </span>
-                                </div>
+                             <li>
+                                <span> {t('about.work_2')}</span>
                             </li>
 
                         </ul>
