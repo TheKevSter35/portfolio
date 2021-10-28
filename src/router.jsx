@@ -6,11 +6,13 @@ import Home from './components/pages/home'
 import Work from './components/pages/work'
 import About from './components/pages/about'
 import PortfolioWork from './components/pages/portfolioWork'
-// import {useTranslation} from "react-i18next";
+import ScrollToTop from './components/functions/scrolltotop'
 
 import {AnimatePresence} from 'framer-motion'
 
 const MainRouter = () => {
+
+
     // const [t,
     //     i18n] = useTranslation('common');
 
@@ -34,6 +36,7 @@ const MainRouter = () => {
 
     return (
         <Router>
+            <ScrollToTop/>
             <Header/>
             <AnimatePresence exitBeforeEnter>
                 <Switch>
