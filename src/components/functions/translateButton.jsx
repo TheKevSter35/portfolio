@@ -14,6 +14,14 @@ const TranslateButton = () => {
                 .add('active')
         }
     }, [])
+    useEffect(() => {
+        if (i18n.language === ('nl')) {
+            const enLangauge = document.getElementsByClassName('nl')[0]
+            enLangauge
+                .classList
+                .add('active')
+        }
+    }, [])
 
     const setNL = () => {
         const en = document.getElementsByClassName('en')[0]
