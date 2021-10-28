@@ -1,6 +1,6 @@
 {
-    "welcome": {
-        "title": "Welcome to {{framework}}"
+    "work": {
+        "check_work": "Check work"
     },
     "nav": {
         "work": "work",

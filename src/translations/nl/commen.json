@@ -1,12 +1,25 @@
 {
-    "welcome": {
-        "title": "Welkom bij {{framework}}"
+    "work": {
+        "check_work": "Bekijk werk"
     },
     "nav": {
         "work": "Werk",
         "about": "Over Mij"
     },
     "about": {
-        "code_knowledge": "Code kennis"
+        "about_me":"Mijn naam is Kevin Curi. Ik ben een afgestudeerde CMD student met kennis van Front-end Developer en UX Designer. Loving life met Gaming, Tech, en natuurlijk ontwerpen in het bouwen van websites en web-apps.",
+        "code_knowledge": "Code Kennis",
+        "adobe_knowledge": "Adobe Kennis",
+        "educations": "Opleidingen",
+        "educations_1": "HBO | Communication and Multimedia Design (2017 - 2021)",
+        "educations_2": "MBO Niv4 | Applicatie ontwikkelaar (2014 - 2017)",
+        "educations_3": "MBO Niv3 | Mede-beheerder ICT (2012 - 2014)",
+        "internship": "Stages ",
+        "internship_1": "CanvasHeroes | Stagiair  Front-End Developer (Sep. 2020 – Jan. 2021)",
+        "internship_2": "Bikkelhart | Stagiair  Front-End Developer (Jan. 2019 – Apr. 2019",
+        "internship_3": "Premiums | Stagiair  Web Developer (Feb. 2016 – Jan. 2017)",
+        "work": "Work",
+        "work_1": "Bikkelhart | Front-End Developer (Mei. 2019 – Aug. 2019)",
+        "work_2": "Premiums | Web Developer (Nov. 2016 – Apr. 2017)"
     }
 }
