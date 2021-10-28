@@ -10,20 +10,23 @@ header {
   nav {
     display: flex;
     flex-direction: row;
+    text-align: center;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding: 20px;
-    max-width: 560px;
+    max-width: 380px;
     margin: 0 auto;
 
     a {
       // font-size: 32px;
-      display: flex;
-      flex-direction: column;
+      display: inline-block;
+    align-items: center;
+    justify-content: center;
       text-align: center;
       font-weight: bold;
       color: $black;
       position: relative;
+      flex: 1 1;
 
 
       span {
