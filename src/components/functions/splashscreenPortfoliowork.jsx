@@ -17,7 +17,7 @@ const Splashscreen = ({project, setProject}) => {
     useEffect(() => {
         setTimeout(() => {
             SetSplashScreenVisible(false)
-        }, 1500)
+        }, 1200)
     }, [])
 
     return (
@@ -27,10 +27,10 @@ const Splashscreen = ({project, setProject}) => {
                 appear={true}
                 classNames="fade-out-splashscreen"
                 unmountOnExit
-                timeout={1500}>
+                timeout={1200}>
                 <section className="splashscreen">
-                   <img src={project.thumbnail} alt={project.name}/>
-                   <h1>{project.name}</h1>
+                    <img src={project.thumbnail} alt={project.name}/>
+                    <h1>{project.name}</h1>
                 </section>
             </CSSTransition>
         </Fragment>

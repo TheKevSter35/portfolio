@@ -4,7 +4,6 @@
      top: 100vh;
 }
 
-
 @keyframes list {
      from {
           top: 100vh;
@@ -12,12 +11,10 @@
      }
 
      to {
-          top: 0vh;
+          top: 0;
           opacity: 1;
      }
 }
-
-
 
 .splashscreen {
      position: fixed;
@@ -35,20 +32,13 @@
      justify-content: center;
      align-items: center;
      padding: 20px;
-    text-align: center;
+     text-align: center;
 
      img {
           width: 170px;
-          animation: imgappear 1s ease 0s;
-          animation-fill-mode: forwards;
      }
 
-     h1 {
-          animation: imgappear 1s ease 0s;
-          animation-fill-mode: forwards;
-     }
 }
-
 
 @keyframes imgappear {
      0% {
@@ -73,11 +63,16 @@
 }
 
 .fade-out-splashscreen-appear {
+
      opacity: 1;
      will-change: opacity;
 
+     h1,
      img {
           opacity: 0;
+          animation: imgappear 0.3s ease 0s;
+          animation-fill-mode: forwards;
+          animation-delay: 0.3s;
           transition: inherit;
      }
 }
@@ -86,6 +81,7 @@
      opacity: 1;
      transition: 300ms ease-in-out opacity;
 
+     h1,
      img {
           opacity: 1;
           transition: inherit;
@@ -102,11 +98,12 @@
 }
 
 .fade-out-splashscreen-exit-active {
-     opacity: .001;
+     opacity: 0.001;
      transition: 300ms ease-in-out opacity;
 }
 
 .fade-out-splashscreen-exit-done {
-     opacity: .001;
+     opacity: 0.001;
      z-index: -1;
 }
+
