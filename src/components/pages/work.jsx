@@ -57,7 +57,7 @@ const Work = ({getItems, items}) => {
                                 <img src={item.banner} alt={item.name}/>
                                 <div className="copy">
                                     <h2>{item.name}</h2>
-                                    {i18n.language == 'en' && 
+                                    {i18n.language === 'en' && 
                                      <Fragment>
                                     <p>{item.description_en}</p>
                                      <a
@@ -70,7 +70,7 @@ const Work = ({getItems, items}) => {
                                         {t('work.check_work')}</a>
                                         </Fragment>
                                     }
-                                    {i18n.language == 'nl' && 
+                                    {i18n.language === 'nl' && 
                                     <Fragment>
                                     <p>{item.description_nl}</p>
                                      
