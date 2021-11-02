@@ -19,7 +19,12 @@ const PortfolioWork = ({project, setProject, errorStatus}) => {
 
     useEffect(() => {
         if (errorStatus === true) {
-            history.push(`/`)
+            if (window.location.href.substr(0, window.location.href.indexOf('en'))) {
+            history.push(`/en`)
+        } else {
+           history.push(`/`)
+        }
+            
         }
     }, [errorStatus, history])
 
@@ -31,9 +36,7 @@ const PortfolioWork = ({project, setProject, errorStatus}) => {
             <section className="banner">
                 <div className="banner__inner inner">
                     <img src={project.banner} alt={project.name}/>
-
                 </div>
-
             </section>
 
             <section className="copy-section">
