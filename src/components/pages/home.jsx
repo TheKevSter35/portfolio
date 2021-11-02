@@ -3,8 +3,16 @@ import {getItems} from '../../actions/global-actions'
 import {useHistory} from 'react-router-dom'
 import {connect} from 'react-redux'
 import {motion} from 'framer-motion'
+    import {useTranslation} from "react-i18next";
+
 
 const Home = ({getItems, items}) => {
+
+
+
+
+    const [t,
+        i18n] = useTranslation('common');
 
     useEffect(() => {
         getItems()
@@ -12,9 +20,16 @@ const Home = ({getItems, items}) => {
 
     const history = useHistory()
     const handleOnClick = (id) => {
-        setTimeout(() => {
+        if (i18n.language === ('en')) {
+            setTimeout(() => {
+            history.push(`/en/project/${id}`)
+        }, 300);
+        } else {
+            setTimeout(() => {
             history.push(`/project/${id}`)
         }, 300);
+        }
+        
 
     }
 

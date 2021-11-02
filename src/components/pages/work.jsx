@@ -17,9 +17,17 @@ const Work = ({getItems, items}) => {
 
     const history = useHistory()
     const handleOnClick = (id) => {
-        setTimeout(() => {
+
+        if (i18n.language === ('en')) {
+            setTimeout(() => {
+            history.push(`/en/project/${id}`)
+        }, 300);
+        } else {
+            setTimeout(() => {
             history.push(`/project/${id}`)
         }, 300);
+        }
+        
 
     }
     return (

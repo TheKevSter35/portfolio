@@ -4,7 +4,11 @@
     },
     "nav": {
         "work": "Werk",
-        "about": "Over Mij"
+        "about": "Over Mij",
+        "work_url": "/werk",
+        "about_url": "/overmij",
+        "home_url": "/"
+        
     },
     "about": {
         "about_me":"Mijn naam is Kevin Curi. Ik ben Front-end Developer en UX Designer. Loving life met Gaming, Tech, en natuurlijk ontwerpen in het bouwen van websites en web-apps.",

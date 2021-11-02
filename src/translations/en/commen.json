@@ -4,7 +4,10 @@
     },
     "nav": {
         "work": "work",
-        "about": "about"
+        "about": "about",
+        "work_url": "/en/work",
+        "about_url": "/en/about",
+        "home_url": "/en"
     },
     "about": {
         "about_me":"My name is Kevin Curi. I'm a  Front-end Developer and UX Designer knowledge. Loving life with Gaming, Tech, and of course designing en building websites and web-apps.",

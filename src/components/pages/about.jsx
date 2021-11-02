@@ -1,4 +1,4 @@
-import React from 'react'
+import {React, useEffect, useState} from "react";
 import {
     Html,
     Css,
@@ -16,6 +16,14 @@ const About = () => {
 
 const [t, i18n] = useTranslation('common');
 
+useEffect(() => {
+    if(window.location.pathname === '/en/about'){
+             i18n.changeLanguage('en')
+        } else{
+            i18n.changeLanguage('nl')
+        }
+        
+}, [])
     return (
         <motion.main
             className="about"
