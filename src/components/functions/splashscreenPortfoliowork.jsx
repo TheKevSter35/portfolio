@@ -14,8 +14,10 @@ const Splashscreen = ({project, setProject}) => {
 
     const [isSplashScreenVisible,
         SetSplashScreenVisible] = useState(true);
+        
     useEffect(() => {
         setTimeout(() => {
+            window.scrollTo(0, 0);
             SetSplashScreenVisible(false)
         }, 1200)
     }, [])
