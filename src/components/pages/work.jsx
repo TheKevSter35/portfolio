@@ -60,28 +60,26 @@ const Work = ({getItems, items}) => {
                                     {i18n.language === 'en' && 
                                      <Fragment>
                                     <p>{item.description_en}</p>
-                                     <a
+                                     <button
                                         className="primary-button"
-                                        href={`/en/portfolio/${item.id}`}
                                         onClick={() => {
                                         handleOnClick(item.id)
                                     }}>
                                         <ArrowRight/>
-                                        {t('work.check_work')}</a>
+                                        {t('work.check_work')}</button>
                                         </Fragment>
                                     }
                                     {i18n.language === 'nl' && 
                                     <Fragment>
                                     <p>{item.description_nl}</p>
                                      
-                                     <a
+                                     <button
                                         className="primary-button"
-                                        href={`/portfolio/${item.id}`}
                                         onClick={() => {
                                         handleOnClick(item.id)
                                     }}>
                                         <ArrowRight/>
-                                        {t('work.check_work')}</a>
+                                        {t('work.check_work')}</button>
                                         </Fragment>
                                     }
                                    

@@ -76,7 +76,9 @@ body {
     .work-list li .copy {
         background-color: $dark-grey;
         color: $white;
-
+   .primary-button {
+        color:$white;
+   }
     }
 
     .work-list li:hover .copy {
@@ -84,6 +86,7 @@ body {
     }
 
     .primary-button {
+       
         svg {
             fill: none;
             stroke: $white;

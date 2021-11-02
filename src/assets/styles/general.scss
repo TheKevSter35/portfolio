@@ -114,6 +114,8 @@ main {
 
                 position: absolute;
                 bottom: 30px;
+                color: $black;
+                cursor: pointer;
 
                 svg {
                     fill: none;
@@ -134,7 +136,7 @@ main {
             bottom: 60px;
 
 
-            a {
+            .primary-button  {
                 color: inherit;
 
                 svg {
