@@ -1,4 +1,4 @@
-import {React, Fragment, useEffect} from "react";
+import {React, useEffect} from "react";
 import {NavLink, Link} from 'react-router-dom'
 import {Logo} from './icons'
 import TranslateButton from '../components/functions/translateButton'
@@ -20,7 +20,6 @@ const Header = () => {
     return (
         <header>
             <TranslateButton/>
-
             <nav>
                 <NavLink
                     to={t('nav.work_url')}

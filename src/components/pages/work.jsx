@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React, {useEffect, Fragment} from 'react'
 import {getItems} from '../../actions/global-actions'
 import {useHistory} from 'react-router-dom'
 import {connect} from 'react-redux'
@@ -57,10 +57,24 @@ const Work = ({getItems, items}) => {
                                 <img src={item.banner} alt={item.name}/>
                                 <div className="copy">
                                     <h2>{item.name}</h2>
-                                    {i18n.language == 'en' && <p>{item.description_en}</p>}
-                                    {i18n.language == 'nl' && <p>{item.description_nl}</p>}
-                                    {item.description &&  <p>{item.description}</p>}
-                                    <a
+                                    {i18n.language == 'en' && 
+                                     <Fragment>
+                                    <p>{item.description_en}</p>
+                                     <a
+                                        className="primary-button"
+                                        href={`/en/portfolio/${item.id}`}
+                                        onClick={() => {
+                                        handleOnClick(item.id)
+                                    }}>
+                                        <ArrowRight/>
+                                        {t('work.check_work')}</a>
+                                        </Fragment>
+                                    }
+                                    {i18n.language == 'nl' && 
+                                    <Fragment>
+                                    <p>{item.description_nl}</p>
+                                     
+                                     <a
                                         className="primary-button"
                                         href={`/portfolio/${item.id}`}
                                         onClick={() => {
@@ -68,6 +82,9 @@ const Work = ({getItems, items}) => {
                                     }}>
                                         <ArrowRight/>
                                         {t('work.check_work')}</a>
+                                        </Fragment>
+                                    }
+                                   
                                 </div>
 
                             </li>
