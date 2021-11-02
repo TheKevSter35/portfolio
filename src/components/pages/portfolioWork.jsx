@@ -8,7 +8,8 @@ import Splashscreen from '../functions/splashscreenPortfoliowork'
 import {useTranslation} from "react-i18next";
 
 const PortfolioWork = ({project, setProject, errorStatus}) => {
-    const [t, i18n] = useTranslation('common');
+    const [t,
+        i18n] = useTranslation('common');
     const history = useHistory()
 
     const param = useParams()
@@ -20,11 +21,11 @@ const PortfolioWork = ({project, setProject, errorStatus}) => {
     useEffect(() => {
         if (errorStatus === true) {
             if (window.location.href.substr(0, window.location.href.indexOf('en'))) {
-            history.push(`/en`)
-        } else {
-           history.push(`/`)
-        }
-            
+                history.push(`/en`)
+            } else {
+                history.push(`/`)
+            }
+
         }
     }, [errorStatus, history])
 
