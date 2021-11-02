@@ -4,8 +4,9 @@ import {Logo} from './icons'
 import TranslateButton from '../components/functions/translateButton'
 import Darkmode from '../components/functions/darkmodebutton'
 import {useTranslation} from "react-i18next";
+import {connect} from 'react-redux'
 
-const Header = () => {
+const Header = ({project}) => {
     const [t,
         i18n] = useTranslation('common');
 
@@ -27,6 +28,9 @@ const Header = () => {
                     if (window.location.pathname === `${t('nav.work_url')}`) {
                         return true;
                     }
+                    if (window.location.pathname === `/project/${project.id}` || window.location.pathname === `/en/project/${project.id}` ) {
+                        return true;
+                    }
                 }}>
                     <span>{t('nav.work')}</span>
                 </NavLink>
@@ -45,5 +49,7 @@ const Header = () => {
         </header>
     )
 }
+const mapStateToProps = state => ({project: state.global.project})
 
-export default Header;
+export default connect (mapStateToProps)(Header)
+
