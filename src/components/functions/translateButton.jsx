@@ -1,5 +1,4 @@
 import {React, useEffect} from "react";
-import {setProject} from '../../actions/global-actions'
 import {useTranslation} from "react-i18next";
 import {connect} from 'react-redux'
 
@@ -15,13 +14,12 @@ const TranslateButton = ({project}) => {
                 .classList
                 .add('active')
         } else {
-            const enLangauge = document.getElementsByClassName('nl')[0]
+            const nlLangauge = document.getElementsByClassName('nl')[0]
             i18n.changeLanguage('nl')
-            enLangauge
+            nlLangauge
                 .classList
                 .add('active')
         }
-
     }, [])
 
     const setNL = () => {
@@ -54,7 +52,6 @@ const TranslateButton = ({project}) => {
                 .history
                 .pushState({}, '', `/project/${project.id}`);
         }
-
     }
 
     const setEN = () => {
@@ -87,8 +84,8 @@ const TranslateButton = ({project}) => {
                 .history
                 .pushState({}, '', `/en/project/${project.id}`);
         }
-
     }
+
     return (
         <div className='translatebuttons'>
             <button className="nl" onClick={() => setNL()}>nl</button>
