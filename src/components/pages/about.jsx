@@ -280,6 +280,9 @@ useEffect(() => {
                              <li>
                                 <span> {t('about.work_2')}</span>
                             </li>
+                            <li>
+                                <span> {t('about.work_3')}</span>
+                            </li>
 
                         </ul>
                     </div>
