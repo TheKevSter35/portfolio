@@ -251,14 +251,14 @@ useEffect(() => {
                             <h2>
                                 {t('about.internship')}
                             </h2>
+                             <li>
+                                <span> <b>{t('about.internship_1')}</b> | {t('about.internship_1_title')}</span>
+                            </li>
                             <li>
-                                <span> {t('about.internship_1')}</span>
+                                <span> <b>{t('about.internship_2')}</b> | {t('about.internship_2_title')}</span>
                             </li>
-                           <li>
-                                <span> {t('about.internship_2')}</span>
-                            </li>
-                           <li>
-                                <span> {t('about.internship_3')}</span>
+                             <li>
+                                <span> <b>{t('about.internship_3')}</b> | {t('about.internship_3_title')}</span>
                             </li>
                         </ul>
                     </div>
@@ -275,13 +275,13 @@ useEffect(() => {
                                 {t('about.work')}
                             </h2>
                             <li>
-                                <span> {t('about.work_1')}</span>
+                                <span> <b>{t('about.work_1')}</b> | {t('about.work_1_title')}</span>
                             </li>
                              <li>
-                                <span> {t('about.work_2')}</span>
+                                <span> <b>{t('about.work_2')}</b> | {t('about.work_2_title')}</span>
                             </li>
                             <li>
-                                <span> {t('about.work_3')}</span>
+                                <span> <b>{t('about.work_3')}</b> | {t('about.work_3_title')}</span>
                             </li>
 
                         </ul>

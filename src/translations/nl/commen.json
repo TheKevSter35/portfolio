@@ -19,12 +19,18 @@
         "educations_2": "MBO Niv4 | Applicatie ontwikkelaar (2014 - 2017)",
         "educations_3": "MBO Niv3 | Mede-beheerder ICT (2012 - 2014)",
         "internship": "Stages ",
-        "internship_1": "CanvasHeroes | Stagiair  Front-End Developer (Sep. 2020 – Jan. 2021)",
-        "internship_2": "Bikkelhart | Stagiair  Front-End Developer (Jan. 2019 – Apr. 2019",
-        "internship_3": "Premiums | Stagiair  Web Developer (Feb. 2016 – Jan. 2017)",
-        "work": "Work",
-        "work_1": "Est Digital | Junior Front-End Developer (Jan. 2022 – heden)",
-        "work_2": "Bikkelhart | Front-End Developer (Mei. 2019 – Aug. 2019)",
-        "work_3": "Premiums | Web Developer (Nov. 2016 – Apr. 2017)"
+        "internship_1": "CanvasHeroes",
+        "internship_2": "Bikkelhart",
+        "internship_3": "PREMIUMS",
+        "internship_1_title": "Stagiair Front-End Developer (Sep. 2020 – Jan. 2021)",
+        "internship_2_title": "Stagiair Front-End Developer (Jan. 2019 – Apr. 2019",
+        "internship_3_title": "Stagiair Web Developer (Feb. 2016 – Jan. 2017)",
+        "work": "Werk",
+        "work_1": "Est Digital",
+        "work_2": "Bikkelhart",
+        "work_3": "PREMIUMS",
+        "work_1_title": "Junior Front-End Developer (Jan. 2022 – current)",
+        "work_2_title": "Front-End Developer (Mei. 2019 – Aug. 2019)",
+        "work_3_title": "Web Developer (Nov. 2016 – Apr. 2017)"
     }
 }
