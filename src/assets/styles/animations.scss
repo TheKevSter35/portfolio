@@ -1,109 +1,106 @@
 .portfolio-list li {
-     animation: list 0.8s ease 0s;
-     animation-fill-mode: forwards;
-     top: 100vh;
+  animation: list 0.8s ease 0s;
+  animation-fill-mode: forwards;
+  top: 100vh;
 }
 
 @keyframes list {
-     from {
-          top: 100vh;
-          opacity: 0;
-     }
+  from {
+    top: 100vh;
+    opacity: 0;
+  }
 
-     to {
-          top: 0;
-          opacity: 1;
-     }
+  to {
+    top: 0;
+    opacity: 1;
+  }
 }
 
 .splashscreen {
-     position: fixed;
-     left: 0;
-     right: 0;
-     bottom: 0;
-     top: 0;
-     width: 100vw;
-     height: 100vh;
-     background: $bg-white;
-     z-index: 999;
-     color: $black;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-     padding: 20px;
-     text-align: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: $bg-white;
+  z-index: 999;
+  color: $black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
 
-     img {
-          width: 170px;
-     }
-
+  img {
+    width: 170px;
+  }
 }
 
 @keyframes imgappear {
-     0% {
-          opacity: 0;
-     }
+  0% {
+    opacity: 0;
+  }
 
-     25% {
-          opacity: 0;
-     }
+  25% {
+    opacity: 0;
+  }
 
-     50% {
-          opacity: 0.5;
-     }
+  50% {
+    opacity: 0.5;
+  }
 
-     50% {
-          opacity: 1;
-     }
+  50% {
+    opacity: 1;
+  }
 
-     100% {
-          opacity: 1;
-     }
+  100% {
+    opacity: 1;
+  }
 }
 
 .fade-out-splashscreen-appear {
+  opacity: 1;
+  will-change: opacity;
 
-     opacity: 1;
-     will-change: opacity;
-
-     h1,
-     img {
-          opacity: 0;
-          animation: imgappear 0.3s ease 0s;
-          animation-fill-mode: forwards;
-          animation-delay: 0.3s;
-          transition: inherit;
-     }
+  h1,
+  img {
+    opacity: 0;
+    animation: imgappear 0.3s ease 0s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.3s;
+    transition: inherit;
+  }
 }
 
 .fade-out-splashscreen-active {
-     opacity: 1;
-     transition: 300ms ease-in-out opacity;
+  opacity: 1;
+  transition: 300ms ease-in-out opacity;
 
-     h1,
-     img {
-          opacity: 1;
-          transition: inherit;
-     }
+  h1,
+  img {
+    opacity: 1;
+    transition: inherit;
+  }
 }
 
 .fade-out-splashscreen-done {
-     opacity: 1;
+  opacity: 1;
 }
 
 .fade-out-splashscreen-exit {
-     opacity: 1;
-     will-change: opacity;
+  opacity: 1;
+  will-change: opacity;
 }
 
 .fade-out-splashscreen-exit-active {
-     opacity: 0.001;
-     transition: 300ms ease-in-out opacity;
+  opacity: 0.001;
+  transition: 300ms ease-in-out opacity;
 }
 
 .fade-out-splashscreen-exit-done {
-     opacity: 0.001;
-     z-index: -1;
+  opacity: 0.001;
+  z-index: -1;
 }
-
