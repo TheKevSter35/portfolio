@@ -1,102 +1,63 @@
-@media screen and (max-width: $screen-monitor) {}
+@media screen and (max-width: $screen-monitor) {
+}
 
 @media screen and (max-width: $screen-laptop) {
-    .portfolio-list {
-        max-width: 990px;
-        margin: 0 auto;
-
-        li {
-
-            min-height: 400px;
-            width: calc(100% / 2);
-
-        }
-    }
 }
 
 @media screen and (max-width: $screen-laptop-small) {
-    .portfolio-list {
-        min-width: 760px;
-    }
+  .copy-section .copy__inner.inner {
+    display: flex;
+    flex-direction: column;
 
-    .copy-section .copy__inner.inner {
-        display: flex;
-        flex-direction: column;
-
-        >div {
-            width: 100%;
-        }
+    > div {
+      width: 100%;
     }
+  }
 
-    .about .skills .inner {
-        grid-template-columns: 1fr;
-        >div{
-            min-height: 500px;
-        }
+  .about .skills .inner {
+    grid-template-columns: 1fr;
+    > div {
+      min-height: 500px;
     }
+  }
 }
 
 @media screen and (max-width: $screen-tablet) {
-    .portfolio-list {
+  .about {
+    .profile {
+      .inner {
         display: flex;
-        flex-direction: column;
-        padding: 0 0.5em;
-        overflow: hidden;
-        flex-wrap: wrap;
-        JUSTIFY-CONTENT: center;
+        margin: auto;
+        padding: 20px;
+        justify-content: center;
         align-items: center;
-        min-width: 100%;
-    }
-
-    .portfolio-list li {
-        color: #fff;
-        transition: 0.3s ease 0s;
-        box-sizing: content-box;
-        position: relative;
-        text-align: center;
-        display: flex;
         flex-direction: column;
-        min-height: 400px;
-        width: calc(100%);
-        cursor: pointer;
-        max-width: 460px;
-    }
 
-    .about {
-        .profile {
-            .inner {
-                display: flex;
-                margin: auto;
-                padding: 20px;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
-
-                >div {
-                    max-width: 100%;
-                    margin-bottom: 20px;
-                }
-            }
+        > div {
+          max-width: 100%;
+          margin-bottom: 20px;
         }
+      }
     }
+  }
 }
 
 @media screen and (max-width: $screen-mobile) {
-    header {
+  header {
     padding-top: 45px;
-    }
-    .work-list li .copy {
-        left: 0;
-        right: 0;
-        margin: 16px;
-        transform: translateX(0%);
-        max-width: 370px;
-        min-width: unset;
-    }
-}   
+  }
+  .work-list li .copy {
+    left: 0;
+    right: 0;
+    margin: 16px;
+    transform: translateX(0%);
+    max-width: 370px;
+    min-width: unset;
+  }
+}
 
 @media screen and (max-width: $screen-mobile-small) {
-    .progression {
+  .progression {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -105,10 +66,11 @@
     padding: 15px 5px;
     width: 100%;
 
-     .progression__title {
-     width: auto;
-     }
+    .progression__title {
+      width: auto;
     }
+  }
 }
 
-@media screen and (max-width: $screen-mobile-smaller) {}
+@media screen and (max-width: $screen-mobile-smaller) {
+}

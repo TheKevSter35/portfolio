@@ -12,66 +12,62 @@ $screen-mobile-smaller: 350px;
 $black: #000;
 
 $green: #00d66c;
-$white: #FFFFFF;
+$white: #ffffff;
 
 //bg colors
-$bg-black:#0e0e0e;
+$bg-black: #0e0e0e;
 $dark-grey: #1a1a1a;
-$bg-white: #FBFBFB;
+$bg-white: #fbfbfb;
 $grey: #d1d1d1;
 $light-grey: #eeeeee;
 
 *,
 *:after,
 *:before {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    background-color: $bg-white;
+  margin: 0;
+  padding: 0;
+  background-color: $bg-white;
 }
 
 .inner {
-    max-width: 1280px;
+  max-width: 1280px;
 }
 
 .primary-button {
-    margin-bottom: 20px;
-    display: block;
-    border: none;
-    background: none;
-    padding: 0;
+  margin-bottom: 20px;
+  display: block;
+  border: none;
+  background: none;
+  padding: 0;
 
-    svg {
-        width: 25px;
-        height: 25px;
-        top: 7px;
-        position: relative;
-        margin-right: 3px;
-        transition: 0.3s ease 0s;
-        left:0;
-    }
+  svg {
+    width: 25px;
+    height: 25px;
+    top: 7px;
+    position: relative;
+    margin-right: 3px;
+    transition: 0.3s ease 0s;
+    left: 0;
+  }
 }
 .primary-button:hover {
-
-        svg {
-            left: 8px;
-        }
+  svg {
+    left: 8px;
+  }
 }
 
 ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 img {
-    width: 100%;
-    display: block;
-}
-
-main{
-    position: relative;
+  width: 100%;
+  display: block;
+  aspect-ratio: auto 1 / 1;
 }

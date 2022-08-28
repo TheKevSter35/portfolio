@@ -1,82 +1,71 @@
-import React, {useEffect} from 'react'
-import {getItems} from '../../actions/global-actions'
-import {useHistory} from 'react-router-dom'
-import {connect} from 'react-redux'
-import {motion} from 'framer-motion'
-    import {useTranslation} from "react-i18next";
+import React, { useEffect } from "react";
+import { getItems } from "../../actions/global-actions";
+import { Link } from "react-router-dom";
+import { connect } from "react-redux";
+import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
+const Home = ({ getItems, items }) => {
+  const [t, i18n] = useTranslation("common");
 
-const Home = ({getItems, items}) => {
+  useEffect(() => {
+    getItems();
+  }, [getItems]);
 
+  return (
+    <motion.main
+      initial={{
+        opacity: 0,
+      }}
+      animate={{
+        opacity: 1,
+      }}
+      exit={{
+        opacity: 0,
+      }}
+    >
+      <section className="home">
+        <div className="inner">
+          <ul className="portfolio-list">
+            {items.map((item, index) => (
+              <li
+                key={index}
+                style={{
+                  background: `${item.bgcolor}`,
+                  animationDelay: ` ${0.1 * item.id}s`,
+                }}
+              >
+                <img src={item.thumbnail} alt={item.name} />
 
-
-
-    const [t,
-        i18n] = useTranslation('common');
-
-    useEffect(() => {
-        getItems()
-    }, [])
-
-    const history = useHistory()
-    const handleOnClick = (id) => {
-        if (i18n.language === ('en')) {
-            setTimeout(() => {
-            history.push(`/en/project/${id}`)
-        }, 300);
-        } else {
-            setTimeout(() => {
-            history.push(`/project/${id}`)
-        }, 300);
-        }
-        
-
-    }
-
-    return (
-        <motion.main
-            initial={{
-            opacity: 0
-        }}
-            animate={{
-            opacity: 1
-        }}
-            exit={{
-            opacity: 0
-        }}>
-            <section className="home">
-                <div className="inner">
-                    <ul className="portfolio-list">
-                        {items.map((item, index) => (
-                            <li
-                                key={index}
-                                style={{
-                                background: `${item.bgcolor}`,
-                                animationDelay: ` ${ 0.1 * item.id}s`
-                            }}
-                                onClick={() => {
-                                handleOnClick(item.id)
-                            }}>
-                                <img src={item.thumbnail} alt={item.name}/>
-
-                                <div className="copy">
-                                    <b>{item.name}</b>
-                                </div>
-
-                            </li>
-                        ))}
-
-                    </ul>
+                <div className="copy">
+                  <b>{item.name}</b>
                 </div>
-            </section>
-        </motion.main>
-    )
-}
+                {i18n.language === "en" && (
+                  <Link
+                    className="primary-button"
+                    to={`/en/project/${item.id}`}
+                  >
+                    {t("work.check_work")}
+                  </Link>
+                )}
+                {i18n.language === "nl" && (
+                  <Link className="primary-button" to={`/project/${item.id}`}>
+                    {t("work.check_work")}
+                  </Link>
+                )}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+    </motion.main>
+  );
+};
 
-const mapStateToProps = state => ({items: state.global.items})
+const mapStateToProps = (state) => ({ items: state.global.items });
 
-const mapDispatchToProps = dispatch => ({
-    getItems: value => dispatch(getItems(value))
-})
+const mapDispatchToProps = (dispatch) => ({
+  getItems: (value) => dispatch(getItems(value)),
+});
 
-export default connect(mapStateToProps, mapDispatchToProps)(Home)
+export default connect(mapStateToProps, mapDispatchToProps)(Home);
