@@ -42,7 +42,7 @@ const Work = ({ getItems, items }) => {
                       <p>{item.description_en}</p>
                       <Link
                         className="primary-button"
-                        to={`/en/project/${item.id}`}
+                        to={`/en/project/${item.slug}`}
                       >
                         <ArrowRight />
                         {t("work.check_work")}
@@ -55,7 +55,7 @@ const Work = ({ getItems, items }) => {
 
                       <Link
                         className="primary-button"
-                        to={`/project/${item.id}`}
+                        to={`/project/${item.slug}`}
                       >
                         <ArrowRight />
                         {t("work.check_work")}

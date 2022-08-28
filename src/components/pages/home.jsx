@@ -43,13 +43,13 @@ const Home = ({ getItems, items }) => {
                 {i18n.language === "en" && (
                   <Link
                     className="primary-button"
-                    to={`/en/project/${item.id}`}
+                    to={`/en/project/${item.slug}`}
                   >
                     {t("work.check_work")}
                   </Link>
                 )}
                 {i18n.language === "nl" && (
-                  <Link className="primary-button" to={`/project/${item.id}`}>
+                  <Link className="primary-button" to={`/project/${item.slug}`}>
                     {t("work.check_work")}
                   </Link>
                 )}
