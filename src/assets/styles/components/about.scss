@@ -9,7 +9,7 @@
       justify-content: space-around;
       align-items: center;
 
-      >div {
+      > div {
         max-width: 50%;
       }
 
@@ -34,17 +34,15 @@
       width: 100%;
       grid-template-columns: 1fr 1fr;
 
-
-
-      >div {
+      > div {
         padding: 20px;
         width: 100%;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
         position: relative;
-            min-height: 640px;
-            transition: background-color 0.3s ease-in-out 0s;
+        min-height: 640px;
+        transition: background-color 0.3s ease-in-out 0s;
 
         img {
           object-fit: cover;
@@ -52,7 +50,6 @@
           margin: 0 auto;
           min-height: inherit;
         }
-
       }
 
       .image {
@@ -60,29 +57,27 @@
       }
     }
   }
-  li{
-  padding: 15px;
-}
+  li {
+    padding: 15px;
+  }
 }
 
- .skills:nth-child(odd) {
-    .inner {
-      .copy {
-        background-color:$light-grey;
-        color: $black;
-      }
+.skills:nth-child(odd) {
+  .inner {
+    .copy {
+      background-color: $light-grey;
+      color: $black;
     }
   }
-   .skills:nth-child(even) {
-    .inner {
-      .copy {
-        background-color:$bg-white;
-        color:$black;
-      }
+}
+.skills:nth-child(even) {
+  .inner {
+    .copy {
+      background-color: $bg-white;
+      color: $black;
     }
   }
-
-
+}
 
 .progression {
   display: grid;
@@ -90,21 +85,21 @@
   justify-content: center;
   align-items: center;
   grid-gap: 20px;
-      padding: 15px 5px;
+  padding: 15px 5px;
 
   &__title {
-        width: 150px;
+    width: 150px;
     font-weight: bold;
     display: flex;
     flex-direction: row;
     justify-content: left;
     align-items: center;
 
-svg{
-  height: 32px;
-  width: 32px;
-  margin-right: 16px;
-}
+    svg {
+      height: 32px;
+      width: 32px;
+      margin-right: 16px;
+    }
   }
 
   &__bar {
@@ -120,9 +115,3 @@ svg{
     }
   }
 }
-
-
-
-
-
-

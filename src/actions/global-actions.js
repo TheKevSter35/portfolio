@@ -1,19 +1,19 @@
 //thunk API CALL
 export const getItems = () => async (dispatch) => {
-  const payload = await fetch(`http://localhost:3001/portfolio`);
-  //   const payload = await fetch(
-  //     `https://my-json-server.typicode.com/TheKevSter35/portfolio-db/portfolio`
-  //   );
+  // const payload = await fetch(`http://localhost:3001/portfolio`);
+  const payload = await fetch(
+    `https://my-json-server.typicode.com/TheKevSter35/portfolio-db/portfolio`
+  );
   const response = await payload.json();
   dispatch(updateItems(response));
 };
 
 export const setProject = (id) => async (dispatch) => {
-  const payload = await fetch(`http://localhost:3001/portfolio/`);
+  // const payload = await fetch(`http://localhost:3001/portfolio/`);
 
-  //   const payload = await fetch(
-  //     `https://my-json-server.typicode.com/TheKevSter35/portfolio-db/portfolio/`
-  //   );
+  const payload = await fetch(
+    `https://my-json-server.typicode.com/TheKevSter35/portfolio-db/portfolio/`
+  );
   const response = await payload.json();
 
   let filterData = response.find((filterData) => filterData.slug === `${id}`);
