@@ -35,7 +35,7 @@ const Header = ({ project }) => {
             }
           }}
         >
-          <span>{t("nav.work")}</span>
+          {t("nav.work")}
         </NavLink>
         <Link className="logo" to={t("nav.home_url")}>
           <Logo />
@@ -48,7 +48,7 @@ const Header = ({ project }) => {
             }
           }}
         >
-          <span>{t("nav.about")}</span>
+          {t("nav.about")}
         </NavLink>
       </nav>
       <Darkmode />

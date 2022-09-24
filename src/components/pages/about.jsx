@@ -301,6 +301,12 @@ const About = () => {
                 </p>
                 <p> {t("about.work_info3.title")}</p>
               </li>
+              <li>
+                <p>
+                  <b>{t("about.work_info4.name")}</b>
+                </p>
+                <p> {t("about.work_info4.title")}</p>
+              </li>
             </ul>
           </div>
         </div>
