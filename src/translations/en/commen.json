@@ -1,35 +1,61 @@
 {
-    "work": {
-        "check_work": "Check work"
+  "work": {
+    "check_work": "Check work"
+  },
+  "nav": {
+    "work": "work",
+    "about": "about",
+    "work_url": "/en/work",
+    "about_url": "/en/about",
+    "home_url": "/en"
+  },
+  "about": {
+    "about_me": "My name is Kevin Curi. I'm a  Front-end Developer and UX Designer knowledge. Loving life with Gaming, Tech, and of course designing en building websites and web-apps.",
+    "code_knowledge": "Code Knowledge",
+    "adobe_knowledge": "Adobe Knowledge",
+    "educations": "Educations",
+
+    "education_1": {
+      "school": "Amsterdam University of Applied Scences",
+      "name": "Communication and Multimedia Design (2017 - 2021)"
     },
-    "nav": {
-        "work": "work",
-        "about": "about",
-        "work_url": "/en/work",
-        "about_url": "/en/about",
-        "home_url": "/en"
+    "education_2": {
+      "school": "MBO College Amstelland",
+      "name": "Application Developer (2014 - 2017)"
     },
-    "about": {
-        "about_me":"My name is Kevin Curi. I'm a  Front-end Developer and UX Designer knowledge. Loving life with Gaming, Tech, and of course designing en building websites and web-apps.",
-        "code_knowledge": "Code Knowledge",
-        "adobe_knowledge": "Adobe Knowledge",
-        "educations": "Educations",
-        "educations_1": "HBO | Communication and Multimedia Design (2017 - 2021)",
-        "educations_2": "MBO Niv4 | Application Developer (2014 - 2017)",
-        "educations_3": "MBO Niv3 | Co-Administrator IT (2012 - 2014)",
-        "internship": "Internship",
-        "internship_1": "CanvasHeroes",
-        "internship_2": "Bikkelhart",
-        "internship_3": "PREMIUMS",
-        "internship_1_title": "Intern Front-End Developer (Sep. 2020 – Jan. 2021)",
-        "internship_2_title": "Intern Front-End Developer (Jan. 2019 – Apr. 2019",
-        "internship_3_title": "Intern Web Developer (Feb. 2016 – Jan. 2017)",
-        "work": "Work",
-        "work_1": "Est Digital",
-        "work_2": "Bikkelhart",
-        "work_3": "PREMIUMS",
-        "work_1_title": "Front-End Developer (Jan. 2022 – current)",
-        "work_2_title": "Front-End Developer (May. 2019 – Aug. 2019)",
-        "work_3_title": "Web Developer (Nov. 2016 – Apr. 2017)"
+    "education_3": {
+      "school": "MBO College Zuidoost",
+      "name": "Co-Administrator IT (2012 - 2014)"
+    },
+    "internship": "Internship",
+    "internship_1": {
+      "name": "CanvasHeroes",
+      "title": "Intern Front-End Developer (Sep. 2020 – Jan. 2021)"
+    },
+    "internship_2": {
+      "name": "Bikkelhart",
+      "title": "Intern Front-End Developer (Jan. 2019 – Apr. 2019"
+    },
+    "internship_3": {
+      "name": "PREMIUMS",
+      "title": "Intern Web Developer (Feb. 2016 – Jan. 2017)"
+    },
+    "work": "Work",
+    "work_info1": {
+      "name": "ZIGT",
+      "title": "Front-End Developer (Sep. 2022 – current)"
+    },
+    "work_info2": {
+      "name": "Est Digital",
+      "title": "Front-End Developer (Jan. 2022 –  Sep. 2022)"
+    },
+    "work_info3": {
+      "name": "Bikkelhart",
+      "title": "Front-End Developer (May. 2019 – Aug. 2019)"
+    },
+    "work_info4": {
+      "name": "PREMIUMS",
+      "title": "Web Developer (Nov. 2016 – Apr. 2017)"
     }
+  }
 }

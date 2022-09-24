@@ -5,7 +5,7 @@
     .inner {
       display: flex;
       margin: auto;
-      padding: 20px;
+      padding: 40px;
       justify-content: space-around;
       align-items: center;
 
@@ -16,6 +16,7 @@
       .copy {
         p {
           font-size: 1.5em;
+          line-height: 30px;
         }
       }
 
@@ -34,8 +35,12 @@
       width: 100%;
       grid-template-columns: 1fr 1fr;
 
+      h2 {
+        margin-bottom: 20px;
+      }
+
       > div {
-        padding: 20px;
+        padding: 40px;
         width: 100%;
         margin: 0 auto;
         display: flex;
@@ -56,9 +61,6 @@
         padding: 0;
       }
     }
-  }
-  li {
-    padding: 15px;
   }
 }
 

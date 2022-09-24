@@ -1,6 +1,10 @@
 {
   "display": "standalone",
   "short_name": "kevincuri",
+  "start_url": ".",
+  "background_color": "#0E0E0E",
+  "theme_color": "#0E0E0E",
+  "description": "Portfolio website kevin curi",
   "icons": [
     {
       "src": "manifest-icon-192.maskable.png",

@@ -39,6 +39,7 @@ main {
     width: auto;
     cursor: pointer;
     aspect-ratio: 1;
+    margin: 0;
 
     a {
       opacity: 0;
@@ -110,7 +111,7 @@ main {
       transform: translateX(20%);
       right: 80%;
       transition: inherit;
-      padding: 5px 25px;
+      padding: 30px;
       box-shadow: 4px 5px 11px 0 rgba(0, 0, 0, 0.38);
 
       p {
@@ -173,7 +174,7 @@ main {
     flex-direction: row;
 
     > div {
-      padding: 20px;
+      padding: 40px;
       width: 50%;
       margin: 0 auto;
       display: flex;
@@ -183,6 +184,7 @@ main {
     }
 
     .copy {
+      padding: 40px;
       .links {
         margin-top: 20px;
         display: flex;

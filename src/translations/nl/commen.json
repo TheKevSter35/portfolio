@@ -1,36 +1,61 @@
 {
-    "work": {
-        "check_work": "Bekijk werk"
+  "work": {
+    "check_work": "Bekijk werk"
+  },
+  "nav": {
+    "work": "Werk",
+    "about": "Over Mij",
+    "work_url": "/werk",
+    "about_url": "/overmij",
+    "home_url": "/"
+  },
+  "about": {
+    "about_me": "Mijn naam is Kevin Curi. Ik ben Front-end Developer en UX Designer. Loving life met Gaming, Tech, en natuurlijk ontwerpen in het bouwen van websites en web-apps.",
+    "code_knowledge": "Code Kennis",
+    "adobe_knowledge": "Adobe Kennis",
+    "educations": "Opleidingen",
+    "education_1": {
+      "school": "Hogeschool van Amsterdam",
+      "name": "Communication and Multimedia Design (2017 - 2021)"
     },
-    "nav": {
-        "work": "Werk",
-        "about": "Over Mij",
-        "work_url": "/werk",
-        "about_url": "/overmij",
-        "home_url": "/"
-        
+    "education_2": {
+      "school": "MBO College Amstelland",
+      "name": "Applicatie ontwikkelaar  (2014 - 2017)"
     },
-    "about": {
-        "about_me":"Mijn naam is Kevin Curi. Ik ben Front-end Developer en UX Designer. Loving life met Gaming, Tech, en natuurlijk ontwerpen in het bouwen van websites en web-apps.",
-        "code_knowledge": "Code Kennis",
-        "adobe_knowledge": "Adobe Kennis",
-        "educations": "Opleidingen",
-        "educations_1": "HBO | Communication and Multimedia Design (2017 - 2021)",
-        "educations_2": "MBO Niv4 | Applicatie ontwikkelaar (2014 - 2017)",
-        "educations_3": "MBO Niv3 | Mede-beheerder ICT (2012 - 2014)",
-        "internship": "Stages ",
-        "internship_1": "CanvasHeroes",
-        "internship_2": "Bikkelhart",
-        "internship_3": "PREMIUMS",
-        "internship_1_title": "Stagiair Front-End Developer (Sep. 2020 – Jan. 2021)",
-        "internship_2_title": "Stagiair Front-End Developer (Jan. 2019 – Apr. 2019",
-        "internship_3_title": "Stagiair Web Developer (Feb. 2016 – Jan. 2017)",
-        "work": "Werk",
-        "work_1": "Est Digital",
-        "work_2": "Bikkelhart",
-        "work_3": "PREMIUMS",
-        "work_1_title": "Front-End Developer (Jan. 2022 – heden)",
-        "work_2_title": "Front-End Developer (Mei. 2019 – Aug. 2019)",
-        "work_3_title": "Web Developer (Nov. 2016 – Apr. 2017)"
+    "education_3": {
+      "school": "MBO College Zuidoost",
+      "name": "Mede-beheerder ICT (2012 - 2014)"
+    },
+    "internship": "Stages ",
+    "internship_1": {
+      "name": "CanvasHeroes",
+      "title": "Stagiair Front-End Developer (Sep. 2020 – Jan. 2021)"
+    },
+    "internship_2": {
+      "name": "Bikkelhart",
+      "title": "Stagiair Front-End Developer (Jan. 2019 – Apr. 2019"
+    },
+    "internship_3": {
+      "name": "PREMIUMS",
+      "title": "Stagiair Web Developer (Feb. 2016 – Jan. 2017)"
+    },
+    "work": "Werk",
+
+    "work_info1": {
+      "name": "ZIGT",
+      "title": "Front-End Developer (Sep. 2022 – heden)"
+    },
+    "work_info2": {
+      "name": "Est Digital",
+      "title": "Front-End Developer (Jan. 2022 –  Sep. 2022)"
+    },
+    "work_info3": {
+      "name": "Bikkelhart",
+      "title": "Front-End Developer (Mei. 2019 – Aug. 2019)"
+    },
+    "work_info4": {
+      "name": "PREMIUMS",
+      "title": "Web Developer (Nov. 2016 – Apr. 2017)"
     }
+  }
 }
