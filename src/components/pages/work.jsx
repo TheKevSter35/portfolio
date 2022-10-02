@@ -34,35 +34,44 @@ const Work = ({ getItems, items }) => {
           <ul className="work-list">
             {items.map((item, index) => (
               <li key={index}>
-                <img src={item.banner} alt={item.name} />
-                <div className="copy">
-                  <h2>{item.name}</h2>
-                  {i18n.language === "en" && (
-                    <Fragment>
-                      <p>{item.description_en}</p>
-                      <Link
-                        className="primary-button"
-                        to={`/en/project/${item.slug}`}
-                      >
-                        <ArrowRight />
-                        {t("work.check_work")}
-                      </Link>
-                    </Fragment>
-                  )}
-                  {i18n.language === "nl" && (
-                    <Fragment>
-                      <p>{item.description_nl}</p>
+                {i18n.language === "en" && (
+                  <Link to={`/en/project/${item.slug}`}>
+                    <img src={item.banner} alt={item.name} />
+                    <div className="copy">
+                      <h2>{item.name}</h2>
 
-                      <Link
-                        className="primary-button"
-                        to={`/project/${item.slug}`}
-                      >
-                        <ArrowRight />
-                        {t("work.check_work")}
-                      </Link>
-                    </Fragment>
-                  )}
-                </div>
+                      <Fragment>
+                        <p>{item.description_en}</p>
+                        <Link
+                          className="primary-button"
+                          to={`/en/project/${item.slug}`}
+                        >
+                          <ArrowRight />
+                          {t("work.check_work")}
+                        </Link>
+                      </Fragment>
+                    </div>
+                  </Link>
+                )}
+                {i18n.language === "nl" && (
+                  <Link to={`/en/project/${item.slug}`}>
+                    <img src={item.banner} alt={item.name} />
+                    <div className="copy">
+                      <h2>{item.name}</h2>
+                      <Fragment>
+                        <p>{item.description_nl}</p>
+
+                        <Link
+                          className="primary-button"
+                          to={`/project/${item.slug}`}
+                        >
+                          <ArrowRight />
+                          {t("work.check_work")}
+                        </Link>
+                      </Fragment>
+                    </div>
+                  </Link>
+                )}
               </li>
             ))}
           </ul>
