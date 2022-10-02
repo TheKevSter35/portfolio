@@ -54,7 +54,7 @@ const Work = ({ getItems, items }) => {
                   </Link>
                 )}
                 {i18n.language === "nl" && (
-                  <Link to={`/en/project/${item.slug}`}>
+                  <Link to={`/project/${item.slug}`}>
                     <img src={item.banner} alt={item.name} />
                     <div className="copy">
                       <h2>{item.name}</h2>
