@@ -42,13 +42,13 @@ const Work = ({ getItems, items }) => {
 
                       <Fragment>
                         <p>{item.description_en}</p>
-                        <Link
+                        <span
                           className="primary-button"
                           to={`/en/project/${item.slug}`}
                         >
                           <ArrowRight />
                           {t("work.check_work")}
-                        </Link>
+                        </span>
                       </Fragment>
                     </div>
                   </Link>
@@ -61,13 +61,13 @@ const Work = ({ getItems, items }) => {
                       <Fragment>
                         <p>{item.description_nl}</p>
 
-                        <Link
+                        <span
                           className="primary-button"
                           to={`/project/${item.slug}`}
                         >
                           <ArrowRight />
                           {t("work.check_work")}
-                        </Link>
+                        </span>
                       </Fragment>
                     </div>
                   </Link>
